@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Statuts — Les chums{% endblock %}
+{% block content %}
+
+<div class="panel-head" style="border:none; padding:0 0 12px">
+  <h2 style="text-transform:none; letter-spacing:0; font-size:15px; color:var(--ink)">Blessures &amp; transactions — toute la ligue</h2>
+</div>
+
+<p class="small">Tous les joueurs repêchables actuellement signalés (blessure, transaction, recrue...), qu'ils soient dans un alignement ou non — contrairement au ticker du tableau de bord qui ne montre que tes 6 alignements. Pour ajouter ou modifier un statut, va dans <a href="/admin/stats">Stats (admin)</a>.</p>
+
+<div class="panel mt">
+  <div class="panel-body" style="padding:0; overflow-x:auto">
+    <table>
+      <thead>
+        <tr><th>Joueur</th><th>Éq.</th><th>Pos</th><th>Statut</th><th>Détail</th><th>Propriétaire</th></tr>
+      </thead>
+      <tbody>
+        {% for r in rows %}
+        <tr>
+          <td style="font-weight:600">{{ r.name }}</td>
+          <td class="small"><span class="teamswatch" style="background:{{ team_color(r.team) }}"></span>{{ r.team }}</td>
+          <td>{% if r.pos != 'T' %}<span class="pos {{ r.pos }}">{{ r.pos }}</span>{% endif %}</td>
+          <td><span class="badge {{ r.note_type }}">{{ note_labels.get(r.note_type, r.note_type) }}</span></td>
+          <td class="small">{{ r.note }}</td>
+          <td>
+            {% if r.owner %}<span class="badge">{{ r.owner }}</span>
+            {% else %}<span class="small" style="color:var(--good); font-weight:700">Disponible</span>{% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+        {% if not rows %}
+        <tr><td colspan="6" class="small">Aucun statut signalé actuellement.</td></tr>
+        {% endif %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

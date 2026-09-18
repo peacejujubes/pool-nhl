@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Ajustements — Les chums{% endblock %}
+{% block content %}
+
+<div class="panel">
+  <div class="panel-head"><h2>Ajouter un ajustement manuel</h2></div>
+  <div class="panel-body">
+    <p class="small">Pour les cas non couverts par les stats automatiques : but de gardien, bonus de blanchissage d'équipe, correction quelconque. Les points s'ajoutent (ou se retranchent, avec un nombre négatif) au total du pooler.</p>
+    <form method="post" action="/ajustements/add" class="formline mt">
+      <select name="pooler_id" required>
+        {% for p in poolers %}<option value="{{ p.id }}">{{ p.name }}</option>{% endfor %}
+      </select>
+      <input type="text" name="label" placeholder="Motif (ex.: but de gardien — S. Wedgewood)" required style="min-width:280px">
+      <input type="number" name="points" step="1" placeholder="Points" required>
+      <button class="btn primary" type="submit">Ajouter</button>
+    </form>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-head"><h2>Historique</h2></div>
+  <div class="panel-body" style="padding:0">
+    <table>
+      <thead><tr><th>Date</th><th>Pooler</th><th>Motif</th><th class="r">Points</th><th></th></tr></thead>
+      <tbody>
+        {% for a in rows %}
+        <tr>
+          <td class="small">{{ a.created_at.replace('T',' ') }}</td>
+          <td>{{ a.pooler_name }}</td>
+          <td>{{ a.label }}</td>
+          <td class="r num">{{ '%+.0f'|format(a.points) }}</td>
+          <td class="r">
+            <form method="post" action="/ajustements/{{ a.id }}/supprimer" onsubmit="return confirm('Supprimer cet ajustement ?')">
+              <button class="btn small danger" type="submit">Supprimer</button>
+            </form>
+          </td>
+        </tr>
+        {% else %}
+        <tr><td colspan="5" class="small">Aucun ajustement pour l'instant.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}

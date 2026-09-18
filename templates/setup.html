@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Alignements — Les chums{% endblock %}
+{% block content %}
+
+<p class="small">Change un poste, l'enregistrement est automatique. Un joueur déjà pris par un autre pooler apparaît grisé — il faut d'abord le retirer de son alignement à lui. Les 3 postes « RES » sont les réservistes protégés.</p>
+
+<div class="setupgrid">
+  {% for p in poolers %}
+  <div class="panel">
+    <div class="panel-head"><h2>{{ p.name }}</h2></div>
+    <div class="panel-body" style="padding:6px 0">
+      {% for slot in slots %}
+      {% set pos = slot_pos[slot] %}
+      {% set current = rosters[p.id][slot] %}
+      <div class="slotrow">
+        <span class="slotlabel">{{ slot }}</span>
+        <form method="post" action="/setup/assign" onchange="this.requestSubmit()">
+          <input type="hidden" name="pooler_id" value="{{ p.id }}">
+          <input type="hidden" name="slot" value="{{ slot }}">
+          <select name="player_id">
+            <option value="">— vacant —</option>
+            {% for pl in players_by_pos[pos] %}
+            {% set owner = taken_by.get(pl.id) %}
+            {% set is_current = current and current.player_id == pl.id %}
+            <option value="{{ pl.id }}"
+              {{ 'selected' if is_current else '' }}
+              {{ 'disabled' if (owner and owner != p.name) else '' }}>
+              {{ pl.name }} ({{ pl.team }}){% if owner and owner != p.name %} — pris par {{ owner }}{% endif %}
+            </option>
+            {% endfor %}
+          </select>
+        </form>
+        <span></span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

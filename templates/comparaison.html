@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}Comparaison — Les chums{% endblock %}
+{% block content %}
+
+<div class="panel-head" style="border:none; padding:0 0 12px">
+  <form method="get" action="/comparaison" class="formline">
+    <select name="a" onchange="this.form.requestSubmit()">
+      {% for p in poolers %}<option value="{{ p.id }}" {{ 'selected' if p.id==a_id else '' }}>{{ p.name }}</option>{% endfor %}
+    </select>
+    <span class="small">contre</span>
+    <select name="b" onchange="this.form.requestSubmit()">
+      {% for p in poolers %}<option value="{{ p.id }}" {{ 'selected' if p.id==b_id else '' }}>{{ p.name }}</option>{% endfor %}
+    </select>
+  </form>
+</div>
+
+<div class="panel">
+  <div class="panel-body" style="display:flex; align-items:center; justify-content:space-around; gap:16px; flex-wrap:wrap; text-align:center">
+    <div>
+      <div class="num" style="font-size:30px; font-weight:800; color:{{ 'var(--good)' if team_a.total > team_b.total else 'var(--ink)' }}">{{ '%.0f'|format(team_a.total) }}</div>
+      <div style="font-weight:700">{{ team_a.name }}</div>
+    </div>
+    <div class="small">écart : {{ '%.0f'|format((team_a.total - team_b.total)|abs) }} pts</div>
+    <div>
+      <div class="num" style="font-size:30px; font-weight:800; color:{{ 'var(--good)' if team_b.total > team_a.total else 'var(--ink)' }}">{{ '%.0f'|format(team_b.total) }}</div>
+      <div style="font-weight:700">{{ team_b.name }}</div>
+    </div>
+  </div>
+</div>
+
+<div class="panel mt">
+  <div class="panel-head"><h2><span class="dotbar" style="background:var(--pos-d)"></span>Profil offensif comparé</h2></div>
+  <div class="panel-body" style="padding:0">
+    <table>
+      <thead>
+        <tr><th class="r">{{ team_a.name }}</th><th style="text-align:center">Catégorie</th><th>{{ team_b.name }}</th></tr>
+      </thead>
+      <tbody>
+        {% for row in cat_rows %}
+        <tr>
+          <td class="r num" style="font-weight:{{ '800' if row.a > row.b else '400' }}; color:{{ 'var(--good)' if row.a > row.b else 'var(--ink-2)' }}">{{ row.a }}</td>
+          <td class="small" style="text-align:center">{{ row.label }}</td>
+          <td class="num" style="font-weight:{{ '800' if row.b > row.a else '400' }}; color:{{ 'var(--good)' if row.b > row.a else 'var(--ink-2)' }}">{{ row.b }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel mt">
+  <div class="panel-head"><h2><span class="dotbar"></span>Alignements côte à côte</h2></div>
+  <div class="panel-body" style="padding:0; overflow-x:auto">
+    <table>
+      <thead>
+        <tr><th style="width:44px">Poste</th><th>{{ team_a.name }}</th><th class="r">Pts</th><th class="r">Pts</th><th>{{ team_b.name }}</th></tr>
+      </thead>
+      <tbody>
+        {% for row in slot_rows %}
+        <tr>
+          <td class="small num">{{ row.slot }}</td>
+          <td>
+            {% if row.a.player %}<span class="posdot {{ row.a.player.pos }}"></span>{{ row.a.player.name }}{% else %}<span class="small">— vacant —</span>{% endif %}
+          </td>
+          <td class="r num" style="font-weight:{{ '700' if row.a.points > row.b.points else '400' }}; color:{{ 'var(--good)' if row.a.points > row.b.points else 'var(--ink-2)' }}">{{ '%.0f'|format(row.a.points) }}</td>
+          <td class="r num" style="font-weight:{{ '700' if row.b.points > row.a.points else '400' }}; color:{{ 'var(--good)' if row.b.points > row.a.points else 'var(--ink-2)' }}">{{ '%.0f'|format(row.b.points) }}</td>
+          <td>
+            {% if row.b.player %}<span class="posdot {{ row.b.player.pos }}"></span>{{ row.b.player.name }}{% else %}<span class="small">— vacant —</span>{% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}

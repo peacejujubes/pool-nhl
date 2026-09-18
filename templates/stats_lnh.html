@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}Stats LNH — Les chums{% endblock %}
+{% block content %}
+
+{% macro sortlink(col, label) %}<a href="?pos={{ pos }}&q={{ q|urlencode }}&avail={{ '1' if avail_only else '' }}&sort={{ col }}&dir={{ 'asc' if sort==col and dir=='desc' else 'desc' }}">{{ label }}{% if sort==col %} {{ '▲' if dir=='asc' else '▼' }}{% endif %}</a>{% endmacro %}
+
+<div class="panel-head" style="border:none; padding:0 0 12px; flex-wrap:wrap">
+  <div class="pill-tabs">
+    <a href="/stats-lnh?pos=F" class="{{ 'active' if pos=='F' else '' }}">Attaquants</a>
+    <a href="/stats-lnh?pos=D" class="{{ 'active' if pos=='D' else '' }}">Défenseurs</a>
+    <a href="/stats-lnh?pos=G" class="{{ 'active' if pos=='G' else '' }}">Gardiens</a>
+    <a href="/stats-lnh?pos=T" class="{{ 'active' if pos=='T' else '' }}">Équipes</a>
+  </div>
+  <div class="refreshbox">
+    <span class="dot {{ refresh.status }}"></span>
+    <span>{% if refresh.at %}Actualisé : {{ refresh.at.replace('T',' ') }}{% else %}Jamais actualisé{% endif %}</span>
+    <form method="post" action="/refresh" style="margin:0"><button class="btn small" type="submit">Actualiser</button></form>
+  </div>
+</div>
+
+<p class="small">Toutes les stats LNH brutes des {{ rows|length }} joueurs/équipes repêchables — pas juste ceux dans un alignement. Sert à repérer les joueurs disponibles (non repêchés) qui performent, ou à comparer deux options avant un échange.</p>
+
+{% if refresh.detail and refresh.detail.season_started == false and refresh.detail.nhl_season_seen %}
+<p class="small" style="color:var(--warn)">Saison 2026-27 pas encore commencée (l'API LNH renvoie encore {{ refresh.detail.nhl_season_seen[:4] }}-{{ refresh.detail.nhl_season_seen[6:] }}) — tout est à 0 volontairement.</p>
+{% endif %}
+
+<form method="get" action="/stats-lnh" class="searchbar mt">
+  <input type="hidden" name="pos" value="{{ pos }}">
+  <input type="hidden" name="sort" value="{{ sort }}">
+  <input type="hidden" name="dir" value="{{ dir }}">
+  <input type="search" name="q" value="{{ q }}" placeholder="Chercher un joueur ou une équipe...">
+  <label style="display:flex; align-items:center; gap:5px">
+    <input type="checkbox" name="avail" value="1" {{ 'checked' if avail_only else '' }} onchange="this.form.requestSubmit()">
+    Disponibles seulement
+  </label>
+  <button class="btn small" type="submit">Filtrer</button>
+  {% if q or avail_only %}<a href="/stats-lnh?pos={{ pos }}" class="small">réinitialiser</a>{% endif %}
+</form>
+
+<div class="panel mt">
+  <div class="panel-body" style="padding:0; overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>{{ sortlink('name', 'Joueur') }}</th>
+          <th>{{ sortlink('team', 'Éq.') }}</th>
+          {% for key, label in columns %}
+          <th class="r">{{ sortlink(key, label) }}</th>
+          {% endfor %}
+          <th class="r">{{ sortlink('pool_points', 'Pts pool') }}</th>
+          <th>{{ sortlink('owner', 'Propriétaire') }}</th>
+          <th>Statut</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for r in rows %}
+        <tr>
+          <td style="font-weight:600">{{ r.name }}</td>
+          <td class="small"><span class="teamswatch" style="background:{{ team_color(r.team) }}"></span>{{ r.team }}</td>
+          {% for key, label in columns %}
+          <td class="r num">{{ r[key] if r[key] is not none else 0 }}</td>
+          {% endfor %}
+          <td class="r num" style="font-weight:700">{{ '%.0f'|format(r.pool_points) }}</td>
+          <td>
+            {% if r.owner %}<span class="badge">{{ r.owner }}</span>
+            {% else %}<span class="small" style="color:var(--good); font-weight:700">Disponible</span>{% endif %}
+          </td>
+          <td>{% if r.note %}<span class="badge {{ r.note_type }}" title="{{ r.note }}">{{ note_labels.get(r.note_type, r.note_type) }}</span>{% endif %}</td>
+        </tr>
+        {% endfor %}
+        {% if not rows %}
+        <tr><td colspan="{{ columns|length + 5 }}" class="small">Aucun résultat.</td></tr>
+        {% endif %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p class="foot">« Pts pool » = ce que ce joueur vaudrait avec nos règles de pointage, qu'il soit repêché ou non — pratique pour évaluer un joueur disponible avant de l'ajouter à un alignement.</p>
+{% endblock %}

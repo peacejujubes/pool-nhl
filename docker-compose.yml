@@ -1,0 +1,11 @@
+services:
+  pool-les-chums:
+    build: .
+    container_name: pool-les-chums
+    restart: unless-stopped
+    ports:
+      - "8420:8000"
+    volumes:
+      # Point this at a folder in your Unraid appdata share so the SQLite
+      # database (rosters, stats, adjustments) survives rebuilds.
+      - ./data:/app/data

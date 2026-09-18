@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Pool de hockey — Les chums{% endblock %}</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <h1>Les chums &middot; 2026-27</h1>
+    <span class="sub">Pool de hockey</span>
+  </div>
+  <nav>
+    <a href="/" class="{{ 'active' if request.url.path == '/' else '' }}">Tableau de bord</a>
+    <a href="/setup" class="{{ 'active' if request.url.path == '/setup' else '' }}">Alignements</a>
+    <a href="/ajustements" class="{{ 'active' if request.url.path == '/ajustements' else '' }}">Ajustements</a>
+    <a href="/stats-lnh" class="{{ 'active' if request.url.path == '/stats-lnh' else '' }}">Stats LNH</a>
+    <a href="/calendrier" class="{{ 'active' if request.url.path == '/calendrier' else '' }}">Calendrier</a>
+    <a href="/comparaison" class="{{ 'active' if request.url.path == '/comparaison' else '' }}">Comparer</a>
+    <a href="/statuts" class="{{ 'active' if request.url.path == '/statuts' else '' }}">Statuts</a>
+    <a href="/admin/stats" class="{{ 'active' if request.url.path.startswith('/admin/stats') else '' }}">Stats (admin)</a>
+    <a href="/admin/alertes" class="{{ 'active' if request.url.path == '/admin/alertes' else '' }}">Alertes</a>
+  </nav>
+</header>
+<div class="wrap">
+{% block content %}{% endblock %}
+</div>
+</body>
+</html>

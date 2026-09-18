@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% block title %}{{ pooler.name }} — Les chums{% endblock %}
+{% block content %}
+
+{% set t1 = team.slots['T1'].player %}
+<div class="panel" style="border-top:3px solid {{ team_color(t1.team) if t1 else 'var(--accent)' }}">
+  <div class="panel-head">
+    <h2>{{ pooler.name }}<span class="small" style="text-transform:none; letter-spacing:0; font-weight:600">{{ team_name(t1.team) if t1 else '' }}</span></h2>
+    <div style="display:flex; align-items:center; gap:12px">
+      {% if spark|length > 1 %}
+      <svg class="spark {{ sparkline_trend(spark) }}" width="120" height="30" viewBox="0 0 120 30">
+        <polyline points="{{ sparkline_points(spark, 120, 30) }}" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      {% endif %}
+      <div class="small">Rang {{ rank }} / {{ total_poolers }} &middot; <b class="num" style="font-size:15px; color:var(--ink)">{{ '%.0f'|format(team.total) }}</b> pts</div>
+    </div>
+  </div>
+  <div class="panel-body" style="padding:0">
+    <table>
+      <thead>
+        <tr>
+          <th>Poste</th>
+          <th>Joueur</th>
+          <th>Éq.</th>
+          <th>Pos</th>
+          <th>Note</th>
+          <th class="r">Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for slot in slots %}
+        {% set s = team.slots[slot] %}
+        <tr>
+          <td class="small num">{{ slot }}</td>
+          <td>
+            {% if s.player %}
+              <span class="teamswatch" style="background:{{ team_color(s.player.team) }}"></span>{{ s.player.name }}
+              {% if s.player.note_type == 'injury' %}<span title="{{ s.player.note }}">🩹</span>{% endif %}
+            {% else %}
+              <span class="small">vacant</span>
+            {% endif %}
+          </td>
+          <td class="small">{{ s.player.team if s.player else '' }}</td>
+          <td>{% if s.player %}<span class="pos {{ s.player.pos }}">{{ s.player.pos }}</span>{% endif %}</td>
+          <td>
+            {% if s.player and s.player.note %}
+            <span class="badge {{ s.player.note_type }}">{{ note_labels.get(s.player.note_type, s.player.note_type) }}</span>
+            <span class="small">{{ s.player.note }}</span>
+            {% endif %}
+          </td>
+          <td class="r num" style="font-weight:600">{{ '%.0f'|format(s.points) }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% set c = team.categories %}
+<div class="panel">
+  <div class="panel-head"><h2><span class="dotbar" style="background:var(--pos-d)"></span>Profil offensif</h2></div>
+  <div class="panel-body">
+    <div class="catgrid" style="grid-template-columns:repeat(auto-fit, minmax(120px,1fr))">
+      <div class="catcard" style="text-align:center">
+        <div class="small">Buts</div><div class="num" style="font-size:20px; font-weight:800">{{ c.goals }}</div>
+      </div>
+      <div class="catcard" style="text-align:center">
+        <div class="small">Passes</div><div class="num" style="font-size:20px; font-weight:800">{{ c.assists }}</div>
+      </div>
+      <div class="catcard" style="text-align:center">
+        <div class="small">Av. numérique</div><div class="num" style="font-size:20px; font-weight:800">{{ c.pp }}</div>
+      </div>
+      <div class="catcard" style="text-align:center">
+        <div class="small">Désavantage</div><div class="num" style="font-size:20px; font-weight:800">{{ c.sh }}</div>
+      </div>
+      <div class="catcard" style="text-align:center">
+        <div class="small">Prolongation</div><div class="num" style="font-size:20px; font-weight:800">{{ c.ot }}</div>
+      </div>
+      <div class="catcard" style="text-align:center">
+        <div class="small">Victoires gardien</div><div class="num" style="font-size:20px; font-weight:800">{{ c.goalie_wins }}</div>
+      </div>
+      <div class="catcard" style="text-align:center">
+        <div class="small">Blanchissages</div><div class="num" style="font-size:20px; font-weight:800">{{ c.goalie_so }}</div>
+      </div>
+      <div class="catcard" style="text-align:center">
+        <div class="small">Victoires équipe</div><div class="num" style="font-size:20px; font-weight:800">{{ c.team_wins }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% if team.adjustments %}
+<div class="panel">
+  <div class="panel-head"><h2>Ajustements manuels</h2></div>
+  <div class="panel-body" style="padding:0">
+    <table>
+      <thead><tr><th>Date</th><th>Motif</th><th class="r">Points</th></tr></thead>
+      <tbody>
+        {% for a in team.adjustments %}
+        <tr>
+          <td class="small">{{ a.created_at.replace('T',' ') }}</td>
+          <td>{{ a.label }}</td>
+          <td class="r num">{{ '%+.0f'|format(a.points) }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+
+<p class="foot"><a href="/">&larr; retour au tableau de bord</a></p>
+{% endblock %}

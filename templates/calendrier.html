@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}Calendrier — Les chums{% endblock %}
+{% block content %}
+
+<div class="panel-head" style="border:none; padding:0 0 12px">
+  <h2 style="text-transform:none; letter-spacing:0; font-size:15px; color:var(--ink)">Matchs à venir (7 prochains jours)</h2>
+  <div class="refreshbox">
+    <span class="dot {{ refresh.status }}"></span>
+    <span>{% if updated_at %}Calendrier actualisé : {{ updated_at.replace('T',' ') }}{% else %}Jamais actualisé{% endif %}</span>
+    <form method="post" action="/refresh" style="margin:0"><button class="btn small" type="submit">Actualiser</button></form>
+  </div>
+</div>
+
+{% if days %}
+<div class="weekgrid mt">
+  {% for day in days %}
+  <div class="weekcol">
+    <div class="weekcol-head">{{ day.label }}</div>
+    <div class="weekcol-body">
+      {% if day.games %}
+      {% for g in day.games %}
+      <div class="matchup">
+        <span class="mt-team"><span class="teamswatch" style="background:{{ team_color(g.away) }}"></span>{{ g.away }}</span>
+        <span class="vs">@</span>
+        <span class="mt-team"><span class="teamswatch" style="background:{{ team_color(g.home) }}"></span>{{ g.home }}</span>
+      </div>
+      {% endfor %}
+      {% else %}
+      <div class="weekcol-empty">—</div>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<p class="small mt">Heures approximatives, heure de l'Est. Un badge <span class="badge" style="color:var(--hot); border-color:transparent; background:var(--hot-soft)">B2B</span> signale un back-to-back (l'équipe jouait déjà la veille) — utile pour anticiper la fatigue d'un gardien ou miser sur un attaquant en offensive.</p>
+
+{% if not days %}
+<div class="panel mt"><div class="panel-body small">Aucun calendrier en mémoire pour l'instant — clique sur « Actualiser » (ou attends la prochaine actualisation automatique aux 2h).</div></div>
+{% endif %}
+
+{% for day in days %}
+{% if day.games %}
+<div class="panel mt">
+  <div class="panel-head"><h2 style="text-transform:capitalize; letter-spacing:0; font-size:13.5px">{{ day.label }}</h2><span class="small">{{ day.games|length }} match{{ 's' if day.games|length != 1 }}</span></div>
+  <div class="panel-body" style="padding:0">
+    <table>
+      <thead>
+        <tr><th style="width:60px">Heure</th><th>Visiteur</th><th></th><th>Receveur</th><th class="small">Aréna</th></tr>
+      </thead>
+      <tbody>
+        {% for g in day.games %}
+        <tr>
+          <td class="num small">{{ g.time_et }}</td>
+          <td>
+            <span class="teamswatch" style="background:{{ team_color(g.away) }}"></span>
+            <b>{{ team_name(g.away) }}</b>
+            {% if g.away_b2b %}<span class="badge" style="color:var(--hot); border-color:transparent; background:var(--hot-soft)">B2B</span>{% endif %}
+            {% for owner in g.away_owners %}<span class="badge">{{ owner }}</span>{% endfor %}
+          </td>
+          <td class="small">@</td>
+          <td>
+            <span class="teamswatch" style="background:{{ team_color(g.home) }}"></span>
+            <b>{{ team_name(g.home) }}</b>
+            {% if g.home_b2b %}<span class="badge" style="color:var(--hot); border-color:transparent; background:var(--hot-soft)">B2B</span>{% endif %}
+            {% for owner in g.home_owners %}<span class="badge">{{ owner }}</span>{% endfor %}
+          </td>
+          <td class="small">{{ g.venue }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+{% endfor %}
+
+<p class="foot">Les badges sur une équipe indiquent quel(s) pooler(s) ont un joueur (ou l'équipe elle-même) de ce club dans leur alignement — un coup d'œil rapide sur qui a du volume de matchs cette semaine.</p>
+{% endblock %}

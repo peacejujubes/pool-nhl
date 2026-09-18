@@ -1,0 +1,4192 @@
+[
+{
+"id": "connor-mcdavid",
+"name": "Connor McDavid",
+"team": "EDM",
+"pos": "F",
+"proj": 186.5,
+"note": "",
+"rank": 2,
+"note_type": ""
+},
+{
+"id": "leon-draisaitl",
+"name": "Leon Draisaitl",
+"team": "EDM",
+"pos": "F",
+"proj": 165.0,
+"note": "",
+"rank": 5,
+"note_type": ""
+},
+{
+"id": "nikita-kucherov",
+"name": "Nikita Kucherov",
+"team": "TBL",
+"pos": "F",
+"proj": 164.9,
+"note": "",
+"rank": 3,
+"note_type": ""
+},
+{
+"id": "nathan-mackinnon",
+"name": "Nathan MacKinnon",
+"team": "COL",
+"pos": "F",
+"proj": 161.0,
+"note": "",
+"rank": 1,
+"note_type": ""
+},
+{
+"id": "macklin-celebrini",
+"name": "Macklin Celebrini",
+"team": "SJS",
+"pos": "F",
+"proj": 155.2,
+"note": "",
+"rank": 4,
+"note_type": ""
+},
+{
+"id": "evan-bouchard",
+"name": "Evan Bouchard",
+"team": "EDM",
+"pos": "D",
+"proj": 118.5,
+"note": "",
+"rank": 9,
+"note_type": ""
+},
+{
+"id": "quinn-hughes",
+"name": "Quinn Hughes",
+"team": "MIN",
+"pos": "D",
+"proj": 118.0,
+"note": "",
+"rank": 13,
+"note_type": ""
+},
+{
+"id": "cale-makar",
+"name": "Cale Makar",
+"team": "COL",
+"pos": "D",
+"proj": 114.8,
+"note": "",
+"rank": 7,
+"note_type": ""
+},
+{
+"id": "nick-suzuki",
+"name": "Nick Suzuki",
+"team": "MTL",
+"pos": "F",
+"proj": 137.3,
+"note": "",
+"rank": 26,
+"note_type": ""
+},
+{
+"id": "zach-werenski",
+"name": "Zach Werenski",
+"team": "CBJ",
+"pos": "D",
+"proj": 105.3,
+"note": "",
+"rank": 14,
+"note_type": ""
+},
+{
+"id": "jason-robertson",
+"name": "Jason Robertson",
+"team": "DAL",
+"pos": "F",
+"proj": 135.3,
+"note": "",
+"rank": 10,
+"note_type": ""
+},
+{
+"id": "david-pastrnak",
+"name": "David Pastrnak",
+"team": "BOS",
+"pos": "F",
+"proj": 135.0,
+"note": "",
+"rank": 6,
+"note_type": ""
+},
+{
+"id": "wyatt-johnston",
+"name": "Wyatt Johnston",
+"team": "DAL",
+"pos": "F",
+"proj": 134.4,
+"note": "",
+"rank": 20,
+"note_type": ""
+},
+{
+"id": "adam-fox",
+"name": "Adam Fox",
+"team": "NYR",
+"pos": "D",
+"proj": 103.3,
+"note": "",
+"rank": 47,
+"note_type": ""
+},
+{
+"id": "mikko-rantanen",
+"name": "Mikko Rantanen",
+"team": "DAL",
+"pos": "F",
+"proj": 133.4,
+"note": "",
+"rank": 15,
+"note_type": ""
+},
+{
+"id": "kirill-kaprizov",
+"name": "Kirill Kaprizov",
+"team": "MIN",
+"pos": "F",
+"proj": 133.1,
+"note": "",
+"rank": 8,
+"note_type": ""
+},
+{
+"id": "lane-hutson",
+"name": "Lane Hutson",
+"team": "MTL",
+"pos": "D",
+"proj": 99.6,
+"note": "",
+"rank": 30,
+"note_type": ""
+},
+{
+"id": "jack-eichel",
+"name": "Jack Eichel",
+"team": "VGK",
+"pos": "F",
+"proj": 129.6,
+"note": "",
+"rank": 21,
+"note_type": ""
+},
+{
+"id": "roman-josi",
+"name": "Roman Josi",
+"team": "NSH",
+"pos": "D",
+"proj": 97.0,
+"note": "",
+"rank": 76,
+"note_type": ""
+},
+{
+"id": "rasmus-dahlin",
+"name": "Rasmus Dahlin",
+"team": "BUF",
+"pos": "D",
+"proj": 96.2,
+"note": "",
+"rank": 24,
+"note_type": ""
+},
+{
+"id": "erik-karlsson",
+"name": "Erik Karlsson",
+"team": "PIT",
+"pos": "D",
+"proj": 94.0,
+"note": "",
+"rank": 100,
+"note_type": ""
+},
+{
+"id": "martin-necas",
+"name": "Martin Necas",
+"team": "COL",
+"pos": "F",
+"proj": 123.9,
+"note": "",
+"rank": 11,
+"note_type": ""
+},
+{
+"id": "matt-boldy",
+"name": "Matt Boldy",
+"team": "MIN",
+"pos": "F",
+"proj": 123.1,
+"note": "",
+"rank": 18,
+"note_type": ""
+},
+{
+"id": "cole-caufield",
+"name": "Cole Caufield",
+"team": "MTL",
+"pos": "F",
+"proj": 123.0,
+"note": "",
+"rank": 19,
+"note_type": ""
+},
+{
+"id": "miro-heiskanen",
+"name": "Miro Heiskanen",
+"team": "DAL",
+"pos": "D",
+"proj": 90.8,
+"note": "",
+"rank": 86,
+"note_type": ""
+},
+{
+"id": "mikhail-sergachev",
+"name": "Mikhail Sergachev",
+"team": "UTA",
+"pos": "D",
+"proj": 90.3,
+"note": "",
+"rank": 98,
+"note_type": ""
+},
+{
+"id": "matthew-schaefer",
+"name": "Matthew Schaefer",
+"team": "NYI",
+"pos": "D",
+"proj": 90.1,
+"note": "",
+"rank": 39,
+"note_type": ""
+},
+{
+"id": "darren-raddysh",
+"name": "Darren Raddysh",
+"team": "TOR",
+"pos": "D",
+"proj": 89.6,
+"note": "Nouvelle équipe (avant : TBL)",
+"rank": 58,
+"note_type": "trade"
+},
+{
+"id": "moritz-seider",
+"name": "Moritz Seider",
+"team": "DET",
+"pos": "D",
+"proj": 89.1,
+"note": "",
+"rank": 45,
+"note_type": ""
+},
+{
+"id": "charlie-mcavoy",
+"name": "Charlie McAvoy",
+"team": "BOS",
+"pos": "D",
+"proj": 88.5,
+"note": "",
+"rank": 106,
+"note_type": ""
+},
+{
+"id": "jake-sanderson",
+"name": "Jake Sanderson",
+"team": "OTT",
+"pos": "D",
+"proj": 87.2,
+"note": "",
+"rank": 63,
+"note_type": ""
+},
+{
+"id": "william-nylander",
+"name": "William Nylander",
+"team": "TOR",
+"pos": "F",
+"proj": 116.7,
+"note": "",
+"rank": 28,
+"note_type": ""
+},
+{
+"id": "sidney-crosby",
+"name": "Sidney Crosby",
+"team": "PIT",
+"pos": "F",
+"proj": 116.6,
+"note": "",
+"rank": 49,
+"note_type": ""
+},
+{
+"id": "sam-reinhart",
+"name": "Sam Reinhart",
+"team": "FLA",
+"pos": "F",
+"proj": 116.6,
+"note": "",
+"rank": 50,
+"note_type": ""
+},
+{
+"id": "kyle-connor",
+"name": "Kyle Connor",
+"team": "WPG",
+"pos": "F",
+"proj": 116.3,
+"note": "",
+"rank": 23,
+"note_type": ""
+},
+{
+"id": "tim-stutzle",
+"name": "Tim Stützle",
+"team": "OTT",
+"pos": "F",
+"proj": 116.1,
+"note": "",
+"rank": 37,
+"note_type": ""
+},
+{
+"id": "mark-scheifele",
+"name": "Mark Scheifele",
+"team": "WPG",
+"pos": "F",
+"proj": 115.8,
+"note": "",
+"rank": 41,
+"note_type": ""
+},
+{
+"id": "matthew-tkachuk",
+"name": "Matthew Tkachuk",
+"team": "FLA",
+"pos": "F",
+"proj": 115.6,
+"note": "",
+"rank": 31,
+"note_type": ""
+},
+{
+"id": "clayton-keller",
+"name": "Clayton Keller",
+"team": "UTA",
+"pos": "F",
+"proj": 115.1,
+"note": "",
+"rank": 38,
+"note_type": ""
+},
+{
+"id": "jack-hughes",
+"name": "Jack Hughes",
+"team": "NJD",
+"pos": "F",
+"proj": 114.8,
+"note": "",
+"rank": 25,
+"note_type": ""
+},
+{
+"id": "jake-guentzel",
+"name": "Jake Guentzel",
+"team": "TBL",
+"pos": "F",
+"proj": 113.2,
+"note": "",
+"rank": 33,
+"note_type": ""
+},
+{
+"id": "jackson-lacombe",
+"name": "Jackson LaCombe",
+"team": "ANA",
+"pos": "D",
+"proj": 82.0,
+"note": "",
+"rank": 77,
+"note_type": ""
+},
+{
+"id": "mitch-marner",
+"name": "Mitch Marner",
+"team": "VGK",
+"pos": "F",
+"proj": 112.8,
+"note": "",
+"rank": 36,
+"note_type": ""
+},
+{
+"id": "brady-tkachuk",
+"name": "Brady Tkachuk",
+"team": "FLA",
+"pos": "F",
+"proj": 112.5,
+"note": "Nouvelle équipe (avant : OTT)",
+"rank": 16,
+"note_type": "trade"
+},
+{
+"id": "sebastian-aho",
+"name": "Sebastian Aho",
+"team": "CAR",
+"pos": "F",
+"proj": 112.3,
+"note": "",
+"rank": 55,
+"note_type": ""
+},
+{
+"id": "artemi-panarin",
+"name": "Artemi Panarin",
+"team": "LAK",
+"pos": "F",
+"proj": 112.2,
+"note": "",
+"rank": 34,
+"note_type": ""
+},
+{
+"id": "jakob-chychrun",
+"name": "Jakob Chychrun",
+"team": "WSH",
+"pos": "D",
+"proj": 81.0,
+"note": "",
+"rank": 65,
+"note_type": ""
+},
+{
+"id": "john-carlson",
+"name": "John Carlson",
+"team": "TBL",
+"pos": "D",
+"proj": 80.9,
+"note": "Nouvelle équipe (avant : WSH,ANA)",
+"rank": 68,
+"note_type": "trade"
+},
+{
+"id": "mika-zibanejad",
+"name": "Mika Zibanejad",
+"team": "NYR",
+"pos": "F",
+"proj": 111.0,
+"note": "",
+"rank": 74,
+"note_type": ""
+},
+{
+"id": "dylan-guenther",
+"name": "Dylan Guenther",
+"team": "UTA",
+"pos": "F",
+"proj": 108.5,
+"note": "",
+"rank": 48,
+"note_type": ""
+},
+{
+"id": "mark-stone",
+"name": "Mark Stone",
+"team": "VGK",
+"pos": "F",
+"proj": 107.4,
+"note": "",
+"rank": 122,
+"note_type": ""
+},
+{
+"id": "tage-thompson",
+"name": "Tage Thompson",
+"team": "BUF",
+"pos": "F",
+"proj": 106.6,
+"note": "",
+"rank": 27,
+"note_type": ""
+},
+{
+"id": "dylan-larkin",
+"name": "Dylan Larkin",
+"team": "DET",
+"pos": "F",
+"proj": 106.0,
+"note": "",
+"rank": 72,
+"note_type": ""
+},
+{
+"id": "josh-morrissey",
+"name": "Josh Morrissey",
+"team": "WPG",
+"pos": "D",
+"proj": 75.1,
+"note": "",
+"rank": 83,
+"note_type": ""
+},
+{
+"id": "leo-carlsson",
+"name": "Leo Carlsson",
+"team": "ANA",
+"pos": "F",
+"proj": 105.7,
+"note": "",
+"rank": 42,
+"note_type": ""
+},
+{
+"id": "connor-bedard",
+"name": "Connor Bedard",
+"team": "CHI",
+"pos": "F",
+"proj": 105.4,
+"note": "Blessé (épaule) — absent jusqu’à début novembre",
+"rank": 54,
+"note_type": "injury"
+},
+{
+"id": "filip-forsberg",
+"name": "Filip Forsberg",
+"team": "NSH",
+"pos": "F",
+"proj": 104.6,
+"note": "",
+"rank": 44,
+"note_type": ""
+},
+{
+"id": "andrei-vasilevskiy",
+"name": "Andrei Vasilevskiy",
+"team": "TBL",
+"pos": "G",
+"proj": 88.5,
+"note": "",
+"rank": 12,
+"note_type": ""
+},
+{
+"id": "drake-batherson",
+"name": "Drake Batherson",
+"team": "OTT",
+"pos": "F",
+"proj": 104.3,
+"note": "",
+"rank": 75,
+"note_type": ""
+},
+{
+"id": "roope-hintz",
+"name": "Roope Hintz",
+"team": "DAL",
+"pos": "F",
+"proj": 104.2,
+"note": "",
+"rank": 128,
+"note_type": ""
+},
+{
+"id": "auston-matthews",
+"name": "Auston Matthews",
+"team": "TOR",
+"pos": "F",
+"proj": 103.8,
+"note": "",
+"rank": 17,
+"note_type": ""
+},
+{
+"id": "shayne-gostisbehere",
+"name": "Shayne Gostisbehere",
+"team": "CAR",
+"pos": "D",
+"proj": 72.0,
+"note": "",
+"rank": 124,
+"note_type": ""
+},
+{
+"id": "robert-thomas",
+"name": "Robert Thomas",
+"team": "STL",
+"pos": "F",
+"proj": 102.7,
+"note": "",
+"rank": 87,
+"note_type": ""
+},
+{
+"id": "alex-debrincat",
+"name": "Alex DeBrincat",
+"team": "DET",
+"pos": "F",
+"proj": 102.4,
+"note": "",
+"rank": 52,
+"note_type": ""
+},
+{
+"id": "jake-oettinger",
+"name": "Jake Oettinger",
+"team": "DAL",
+"pos": "G",
+"proj": 86.3,
+"note": "",
+"rank": 35,
+"note_type": ""
+},
+{
+"id": "lucas-raymond",
+"name": "Lucas Raymond",
+"team": "DET",
+"pos": "F",
+"proj": 101.9,
+"note": "",
+"rank": 57,
+"note_type": ""
+},
+{
+"id": "jesper-bratt",
+"name": "Jesper Bratt",
+"team": "NJD",
+"pos": "F",
+"proj": 101.5,
+"note": "",
+"rank": 71,
+"note_type": ""
+},
+{
+"id": "seth-jones",
+"name": "Seth Jones",
+"team": "FLA",
+"pos": "D",
+"proj": 70.6,
+"note": "",
+"rank": 161,
+"note_type": ""
+},
+{
+"id": "aleksander-barkov",
+"name": "Aleksander Barkov",
+"team": "FLA",
+"pos": "F",
+"proj": 101.4,
+"note": "A raté 2025-26 (genou) — de retour",
+"rank": 61,
+"note_type": "injury"
+},
+{
+"id": "brock-faber",
+"name": "Brock Faber",
+"team": "MIN",
+"pos": "D",
+"proj": 69.6,
+"note": "",
+"rank": 142,
+"note_type": ""
+},
+{
+"id": "avalanche-du-colorado-col",
+"name": "Avalanche du Colorado",
+"team": "COL",
+"pos": "T",
+"proj": 112.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "juraj-slafkovsky",
+"name": "Juraj Slafkovský",
+"team": "MTL",
+"pos": "F",
+"proj": 99.9,
+"note": "",
+"rank": 59,
+"note_type": ""
+},
+{
+"id": "brayden-point",
+"name": "Brayden Point",
+"team": "TBL",
+"pos": "F",
+"proj": 99.8,
+"note": "",
+"rank": 60,
+"note_type": ""
+},
+{
+"id": "nikolaj-ehlers",
+"name": "Nikolaj Ehlers",
+"team": "CAR",
+"pos": "F",
+"proj": 99.2,
+"note": "",
+"rank": 89,
+"note_type": ""
+},
+{
+"id": "filip-hronek",
+"name": "Filip Hronek",
+"team": "VAN",
+"pos": "D",
+"proj": 68.3,
+"note": "",
+"rank": 197,
+"note_type": ""
+},
+{
+"id": "cole-hutson",
+"name": "Cole Hutson",
+"team": "WSH",
+"pos": "D",
+"proj": 68.2,
+"note": "",
+"rank": 186,
+"note_type": ""
+},
+{
+"id": "logan-cooley",
+"name": "Logan Cooley",
+"team": "UTA",
+"pos": "F",
+"proj": 98.7,
+"note": "",
+"rank": 73,
+"note_type": ""
+},
+{
+"id": "brandon-hagel",
+"name": "Brandon Hagel",
+"team": "TBL",
+"pos": "F",
+"proj": 98.6,
+"note": "",
+"rank": 53,
+"note_type": ""
+},
+{
+"id": "andrei-svechnikov",
+"name": "Andrei Svechnikov",
+"team": "CAR",
+"pos": "F",
+"proj": 98.1,
+"note": "",
+"rank": 62,
+"note_type": ""
+},
+{
+"id": "adrian-kempe",
+"name": "Adrian Kempe",
+"team": "LAK",
+"pos": "F",
+"proj": 98.0,
+"note": "",
+"rank": 51,
+"note_type": ""
+},
+{
+"id": "kirill-marchenko",
+"name": "Kirill Marchenko",
+"team": "CBJ",
+"pos": "F",
+"proj": 98.0,
+"note": "",
+"rank": 64,
+"note_type": ""
+},
+{
+"id": "victor-hedman",
+"name": "Victor Hedman",
+"team": "TBL",
+"pos": "D",
+"proj": 66.9,
+"note": "",
+"rank": 165,
+"note_type": ""
+},
+{
+"id": "brandt-clarke",
+"name": "Brandt Clarke",
+"team": "LAK",
+"pos": "D",
+"proj": 66.7,
+"note": "",
+"rank": 101,
+"note_type": ""
+},
+{
+"id": "evgeni-malkin",
+"name": "Evgeni Malkin",
+"team": "PIT",
+"pos": "F",
+"proj": 96.3,
+"note": "",
+"rank": 170,
+"note_type": ""
+},
+{
+"id": "cutter-gauthier",
+"name": "Cutter Gauthier",
+"team": "ANA",
+"pos": "F",
+"proj": 95.5,
+"note": "Pas encore de contrat (négociation en cours)",
+"rank": 32,
+"note_type": "contract"
+},
+{
+"id": "logan-thompson",
+"name": "Logan Thompson",
+"team": "WSH",
+"pos": "G",
+"proj": 79.5,
+"note": "",
+"rank": 29,
+"note_type": ""
+},
+{
+"id": "steven-stamkos",
+"name": "Steven Stamkos",
+"team": "NSH",
+"pos": "F",
+"proj": 95.2,
+"note": "",
+"rank": 95,
+"note_type": ""
+},
+{
+"id": "will-smith",
+"name": "Will Smith",
+"team": "SJS",
+"pos": "F",
+"proj": 95.0,
+"note": "",
+"rank": 80,
+"note_type": ""
+},
+{
+"id": "shea-theodore",
+"name": "Shea Theodore",
+"team": "VGK",
+"pos": "D",
+"proj": 64.1,
+"note": "",
+"rank": 138,
+"note_type": ""
+},
+{
+"id": "noah-dobson",
+"name": "Noah Dobson",
+"team": "MTL",
+"pos": "D",
+"proj": 63.8,
+"note": "",
+"rank": 153,
+"note_type": ""
+},
+{
+"id": "vince-dunn",
+"name": "Vince Dunn",
+"team": "SEA",
+"pos": "D",
+"proj": 63.3,
+"note": "",
+"rank": 159,
+"note_type": ""
+},
+{
+"id": "karel-vejmelka",
+"name": "Karel Vejmelka",
+"team": "UTA",
+"pos": "G",
+"proj": 77.2,
+"note": "",
+"rank": 66,
+"note_type": ""
+},
+{
+"id": "gabriel-vilardi",
+"name": "Gabriel Vilardi",
+"team": "WPG",
+"pos": "F",
+"proj": 92.8,
+"note": "",
+"rank": 127,
+"note_type": ""
+},
+{
+"id": "ryan-nugent-hopkins",
+"name": "Ryan Nugent-Hopkins",
+"team": "EDM",
+"pos": "F",
+"proj": 92.7,
+"note": "",
+"rank": 180,
+"note_type": ""
+},
+{
+"id": "rasmus-andersson",
+"name": "Rasmus Andersson",
+"team": "VGK",
+"pos": "D",
+"proj": 61.7,
+"note": "",
+"rank": 178,
+"note_type": ""
+},
+{
+"id": "lightning-de-tampa-bay-tbl",
+"name": "Lightning de Tampa Bay",
+"team": "TBL",
+"pos": "T",
+"proj": 104.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "stars-de-dallas-dal",
+"name": "Stars de Dallas",
+"team": "DAL",
+"pos": "T",
+"proj": 104.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "bo-horvat",
+"name": "Bo Horvat",
+"team": "NYI",
+"pos": "F",
+"proj": 91.8,
+"note": "",
+"rank": 92,
+"note_type": ""
+},
+{
+"id": "nico-hischier",
+"name": "Nico Hischier",
+"team": "NJD",
+"pos": "F",
+"proj": 91.6,
+"note": "",
+"rank": 85,
+"note_type": ""
+},
+{
+"id": "morgan-geekie",
+"name": "Morgan Geekie",
+"team": "BOS",
+"pos": "F",
+"proj": 91.5,
+"note": "",
+"rank": 133,
+"note_type": ""
+},
+{
+"id": "john-tavares",
+"name": "John Tavares",
+"team": "TOR",
+"pos": "F",
+"proj": 91.1,
+"note": "",
+"rank": 103,
+"note_type": ""
+},
+{
+"id": "jeremy-swayman",
+"name": "Jeremy Swayman",
+"team": "BOS",
+"pos": "G",
+"proj": 74.9,
+"note": "",
+"rank": 43,
+"note_type": ""
+},
+{
+"id": "brandon-bussi",
+"name": "Brandon Bussi",
+"team": "CAR",
+"pos": "G",
+"proj": 74.9,
+"note": "",
+"rank": 108,
+"note_type": ""
+},
+{
+"id": "jesper-wallstedt",
+"name": "Jesper Wallstedt",
+"team": "MIN",
+"pos": "G",
+"proj": 74.9,
+"note": "Devient le partant (Gustavsson blessé)",
+"rank": 56,
+"note_type": "injury"
+},
+{
+"id": "porter-martone",
+"name": "Porter Martone",
+"team": "PHI",
+"pos": "F",
+"proj": 90.7,
+"note": "Recrue",
+"rank": 111,
+"note_type": "rookie"
+},
+{
+"id": "ryan-o-reilly",
+"name": "Ryan O'Reilly",
+"team": "NSH",
+"pos": "F",
+"proj": 90.4,
+"note": "",
+"rank": 172,
+"note_type": ""
+},
+{
+"id": "nick-schmaltz",
+"name": "Nick Schmaltz",
+"team": "UTA",
+"pos": "F",
+"proj": 90.1,
+"note": "",
+"rank": 112,
+"note_type": ""
+},
+{
+"id": "bowen-byram",
+"name": "Bowen Byram",
+"team": "CHI",
+"pos": "D",
+"proj": 59.2,
+"note": "Nouvelle équipe (avant : BUF)",
+"rank": 130,
+"note_type": "trade"
+},
+{
+"id": "brandon-montour",
+"name": "Brandon Montour",
+"team": "SEA",
+"pos": "D",
+"proj": 59.2,
+"note": "",
+"rank": 199,
+"note_type": ""
+},
+{
+"id": "thomas-harley",
+"name": "Thomas Harley",
+"team": "DAL",
+"pos": "D",
+"proj": 59.0,
+"note": "",
+"rank": 156,
+"note_type": ""
+},
+{
+"id": "hurricanes-de-la-caroline-car",
+"name": "Hurricanes de la Caroline",
+"team": "CAR",
+"pos": "T",
+"proj": 102.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "dougie-hamilton",
+"name": "Dougie Hamilton",
+"team": "NJD",
+"pos": "D",
+"proj": 58.6,
+"note": "",
+"rank": 168,
+"note_type": ""
+},
+{
+"id": "luke-hughes",
+"name": "Luke Hughes",
+"team": "NJD",
+"pos": "D",
+"proj": 57.9,
+"note": "",
+"rank": 163,
+"note_type": ""
+},
+{
+"id": "ivan-demidov",
+"name": "Ivan Demidov",
+"team": "MTL",
+"pos": "F",
+"proj": 88.7,
+"note": "",
+"rank": 70,
+"note_type": ""
+},
+{
+"id": "jakub-dobes",
+"name": "Jakub Dobes",
+"team": "MTL",
+"pos": "G",
+"proj": 72.6,
+"note": "",
+"rank": 78,
+"note_type": ""
+},
+{
+"id": "igor-shesterkin",
+"name": "Igor Shesterkin",
+"team": "NYR",
+"pos": "G",
+"proj": 72.6,
+"note": "",
+"rank": 40,
+"note_type": ""
+},
+{
+"id": "pavel-dorofeyev",
+"name": "Pavel Dorofeyev",
+"team": "NYR",
+"pos": "F",
+"proj": 88.3,
+"note": "Nouvelle équipe (avant : VGK)",
+"rank": 90,
+"note_type": "trade"
+},
+{
+"id": "dylan-strome",
+"name": "Dylan Strome",
+"team": "WSH",
+"pos": "F",
+"proj": 87.6,
+"note": "",
+"rank": 162,
+"note_type": ""
+},
+{
+"id": "zach-hyman",
+"name": "Zach Hyman",
+"team": "EDM",
+"pos": "F",
+"proj": 87.6,
+"note": "",
+"rank": 69,
+"note_type": ""
+},
+{
+"id": "pavel-zacha",
+"name": "Pavel Zacha",
+"team": "BOS",
+"pos": "F",
+"proj": 87.1,
+"note": "",
+"rank": 179,
+"note_type": ""
+},
+{
+"id": "capitals-de-washington-wsh",
+"name": "Capitals de Washington",
+"team": "WSH",
+"pos": "T",
+"proj": 99.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "canadiens-de-montreal-mtl",
+"name": "Canadiens de Montréal",
+"team": "MTL",
+"pos": "T",
+"proj": 99.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "mathew-barzal",
+"name": "Mathew Barzal",
+"team": "NYI",
+"pos": "F",
+"proj": 86.5,
+"note": "",
+"rank": 119,
+"note_type": ""
+},
+{
+"id": "alex-tuch",
+"name": "Alex Tuch",
+"team": "WSH",
+"pos": "F",
+"proj": 86.4,
+"note": "Nouvelle équipe (avant : BUF)",
+"rank": 107,
+"note_type": "trade"
+},
+{
+"id": "thomas-chabot",
+"name": "Thomas Chabot",
+"team": "OTT",
+"pos": "D",
+"proj": 55.5,
+"note": "",
+"rank": 235,
+"note_type": ""
+},
+{
+"id": "connor-hellebuyck",
+"name": "Connor Hellebuyck",
+"team": "WPG",
+"pos": "G",
+"proj": 70.4,
+"note": "",
+"rank": 22,
+"note_type": ""
+},
+{
+"id": "lukas-dostal",
+"name": "Lukas Dostal",
+"team": "ANA",
+"pos": "G",
+"proj": 70.4,
+"note": "",
+"rank": 93,
+"note_type": ""
+},
+{
+"id": "ilya-sorokin",
+"name": "Ilya Sorokin",
+"team": "NYI",
+"pos": "G",
+"proj": 70.4,
+"note": "",
+"rank": 46,
+"note_type": ""
+},
+{
+"id": "linus-ullmark",
+"name": "Linus Ullmark",
+"team": "OTT",
+"pos": "G",
+"proj": 70.4,
+"note": "",
+"rank": 105,
+"note_type": ""
+},
+{
+"id": "wild-du-minnesota-min",
+"name": "Wild du Minnesota",
+"team": "MIN",
+"pos": "T",
+"proj": 98.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "tomas-hertl",
+"name": "Tomas Hertl",
+"team": "VGK",
+"pos": "F",
+"proj": 86.1,
+"note": "",
+"rank": 135,
+"note_type": ""
+},
+{
+"id": "bryan-rust",
+"name": "Bryan Rust",
+"team": "PIT",
+"pos": "F",
+"proj": 85.6,
+"note": "",
+"rank": 134,
+"note_type": ""
+},
+{
+"id": "trevor-zegras",
+"name": "Trevor Zegras",
+"team": "PHI",
+"pos": "F",
+"proj": 85.5,
+"note": "",
+"rank": 145,
+"note_type": ""
+},
+{
+"id": "sabres-de-buffalo-buf",
+"name": "Sabres de Buffalo",
+"team": "BUF",
+"pos": "T",
+"proj": 97.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "dylan-cozens",
+"name": "Dylan Cozens",
+"team": "OTT",
+"pos": "F",
+"proj": 85.2,
+"note": "",
+"rank": 114,
+"note_type": ""
+},
+{
+"id": "travis-konecny",
+"name": "Travis Konecny",
+"team": "PHI",
+"pos": "F",
+"proj": 85.1,
+"note": "",
+"rank": 91,
+"note_type": ""
+},
+{
+"id": "j-t-miller",
+"name": "J.T. Miller",
+"team": "NYR",
+"pos": "F",
+"proj": 85.1,
+"note": "",
+"rank": 99,
+"note_type": ""
+},
+{
+"id": "mammoth-de-lutah-uta",
+"name": "Mammoth de l’Utah",
+"team": "UTA",
+"pos": "T",
+"proj": 97.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "brock-nelson",
+"name": "Brock Nelson",
+"team": "COL",
+"pos": "F",
+"proj": 84.8,
+"note": "",
+"rank": 125,
+"note_type": ""
+},
+{
+"id": "mackenzie-weegar",
+"name": "MacKenzie Weegar",
+"team": "UTA",
+"pos": "D",
+"proj": 53.9,
+"note": "",
+"rank": 189,
+"note_type": ""
+},
+{
+"id": "senateurs-dottawa-ott",
+"name": "Sénateurs d’Ottawa",
+"team": "OTT",
+"pos": "T",
+"proj": 97.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "dylan-holloway",
+"name": "Dylan Holloway",
+"team": "STL",
+"pos": "F",
+"proj": 84.3,
+"note": "",
+"rank": 88,
+"note_type": ""
+},
+{
+"id": "jacob-markstrom",
+"name": "Jacob Markstrom",
+"team": "FLA",
+"pos": "G",
+"proj": 68.1,
+"note": "",
+"rank": 81,
+"note_type": ""
+},
+{
+"id": "flyers-de-philadelphie-phi",
+"name": "Flyers de Philadelphie",
+"team": "PHI",
+"pos": "T",
+"proj": 96.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "bruins-de-boston-bos",
+"name": "Bruins de Boston",
+"team": "BOS",
+"pos": "T",
+"proj": 95.8,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "matt-duchene",
+"name": "Matt Duchene",
+"team": "DAL",
+"pos": "F",
+"proj": 83.5,
+"note": "",
+"rank": 191,
+"note_type": ""
+},
+{
+"id": "matthew-knies",
+"name": "Matthew Knies",
+"team": "TOR",
+"pos": "F",
+"proj": 83.2,
+"note": "",
+"rank": 82,
+"note_type": ""
+},
+{
+"id": "beckett-sennecke",
+"name": "Beckett Sennecke",
+"team": "ANA",
+"pos": "F",
+"proj": 82.9,
+"note": "",
+"rank": 94,
+"note_type": ""
+},
+{
+"id": "penguins-de-pittsburgh-pit",
+"name": "Penguins de Pittsburgh",
+"team": "PIT",
+"pos": "T",
+"proj": 95.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "golden-knights-de-vegas-vgk",
+"name": "Golden Knights de Vegas",
+"team": "VGK",
+"pos": "T",
+"proj": 94.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "travis-sanheim",
+"name": "Travis Sanheim",
+"team": "PHI",
+"pos": "D",
+"proj": 51.5,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "kings-de-los-angeles-lak",
+"name": "Kings de Los Angeles",
+"team": "LAK",
+"pos": "T",
+"proj": 94.5,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "brad-marchand",
+"name": "Brad Marchand",
+"team": "FLA",
+"pos": "F",
+"proj": 82.1,
+"note": "Blessé — absent jusqu’au ~10 oct.",
+"rank": 140,
+"note_type": "injury"
+},
+{
+"id": "rickard-rakell",
+"name": "Rickard Rakell",
+"team": "PIT",
+"pos": "F",
+"proj": 82.0,
+"note": "",
+"rank": 141,
+"note_type": ""
+},
+{
+"id": "kris-letang",
+"name": "Kris Letang",
+"team": "PIT",
+"pos": "D",
+"proj": 51.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "jordan-kyrou",
+"name": "Jordan Kyrou",
+"team": "WSH",
+"pos": "F",
+"proj": 81.9,
+"note": "Nouvelle équipe (avant : STL)",
+"rank": 129,
+"note_type": "trade"
+},
+{
+"id": "juuse-saros",
+"name": "Juuse Saros",
+"team": "NSH",
+"pos": "G",
+"proj": 65.8,
+"note": "",
+"rank": 146,
+"note_type": ""
+},
+{
+"id": "devils-du-new-jersey-njd",
+"name": "Devils du New Jersey",
+"team": "NJD",
+"pos": "T",
+"proj": 94.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "philip-broberg",
+"name": "Philip Broberg",
+"team": "STL",
+"pos": "D",
+"proj": 50.8,
+"note": "",
+"rank": 193,
+"note_type": ""
+},
+{
+"id": "tom-wilson",
+"name": "Tom Wilson",
+"team": "WSH",
+"pos": "F",
+"proj": 81.6,
+"note": "",
+"rank": 102,
+"note_type": ""
+},
+{
+"id": "dmitry-orlov",
+"name": "Dmitry Orlov",
+"team": "SJS",
+"pos": "D",
+"proj": 50.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "panthers-de-la-floride-fla",
+"name": "Panthers de la Floride",
+"team": "FLA",
+"pos": "T",
+"proj": 93.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "william-eklund",
+"name": "William Eklund",
+"team": "OTT",
+"pos": "F",
+"proj": 81.2,
+"note": "Nouvelle équipe (avant : SJS)",
+"rank": 147,
+"note_type": "trade"
+},
+{
+"id": "nazem-kadri",
+"name": "Nazem Kadri",
+"team": "COL",
+"pos": "F",
+"proj": 81.2,
+"note": "",
+"rank": 149,
+"note_type": ""
+},
+{
+"id": "jared-mccann",
+"name": "Jared McCann",
+"team": "SEA",
+"pos": "F",
+"proj": 81.2,
+"note": "",
+"rank": 192,
+"note_type": ""
+},
+{
+"id": "blue-jackets-de-columbus-cbj",
+"name": "Blue Jackets de Columbus",
+"team": "CBJ",
+"pos": "T",
+"proj": 93.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "alex-ovechkin",
+"name": "Alex Ovechkin",
+"team": "WSH",
+"pos": "F",
+"proj": 80.8,
+"note": "",
+"rank": 96,
+"note_type": ""
+},
+{
+"id": "red-wings-de-detroit-det",
+"name": "Red Wings de Détroit",
+"team": "DET",
+"pos": "T",
+"proj": 92.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "elias-pettersson",
+"name": "Elias Pettersson",
+"team": "VAN",
+"pos": "F",
+"proj": 80.4,
+"note": "",
+"rank": 166,
+"note_type": ""
+},
+{
+"id": "mattias-samuelsson",
+"name": "Mattias Samuelsson",
+"team": "BUF",
+"pos": "D",
+"proj": 49.5,
+"note": "",
+"rank": 244,
+"note_type": ""
+},
+{
+"id": "quinton-byfield",
+"name": "Quinton Byfield",
+"team": "LAK",
+"pos": "F",
+"proj": 79.9,
+"note": "",
+"rank": 116,
+"note_type": ""
+},
+{
+"id": "sam-bennett",
+"name": "Sam Bennett",
+"team": "FLA",
+"pos": "F",
+"proj": 79.8,
+"note": "",
+"rank": 155,
+"note_type": ""
+},
+{
+"id": "ukko-pekka-luukkonen",
+"name": "Ukko-Pekka Luukkonen",
+"team": "BUF",
+"pos": "G",
+"proj": 63.6,
+"note": "",
+"rank": 137,
+"note_type": ""
+},
+{
+"id": "scott-wedgewood",
+"name": "Scott Wedgewood",
+"team": "COL",
+"pos": "G",
+"proj": 63.6,
+"note": "Partage le filet avec Blackwood",
+"rank": 67,
+"note_type": "role"
+},
+{
+"id": "jake-allen",
+"name": "Jake Allen",
+"team": "NJD",
+"pos": "G",
+"proj": 63.6,
+"note": "",
+"rank": 167,
+"note_type": ""
+},
+{
+"id": "sergei-bobrovsky",
+"name": "Sergei Bobrovsky",
+"team": "TOR",
+"pos": "G",
+"proj": 63.6,
+"note": "",
+"rank": 117,
+"note_type": ""
+},
+{
+"id": "islanders-de-new-york-nyi",
+"name": "Islanders de New York",
+"team": "NYI",
+"pos": "T",
+"proj": 91.8,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "oilers-dedmonton-edm",
+"name": "Oilers d’Edmonton",
+"team": "EDM",
+"pos": "T",
+"proj": 91.5,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "justin-faulk",
+"name": "Justin Faulk",
+"team": "DET",
+"pos": "D",
+"proj": 48.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "adam-fantilli",
+"name": "Adam Fantilli",
+"team": "CBJ",
+"pos": "F",
+"proj": 78.7,
+"note": "Pas encore de contrat (négociation en cours)",
+"rank": 84,
+"note_type": "contract"
+},
+{
+"id": "anton-frondell",
+"name": "Anton Frondell",
+"team": "CHI",
+"pos": "F",
+"proj": 78.4,
+"note": "Recrue",
+"rank": 143,
+"note_type": "rookie"
+},
+{
+"id": "sam-malinski",
+"name": "Sam Malinski",
+"team": "COL",
+"pos": "D",
+"proj": 47.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "k-andre-miller",
+"name": "K'Andre Miller",
+"team": "CAR",
+"pos": "D",
+"proj": 47.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "alexander-nikishin",
+"name": "Alexander Nikishin",
+"team": "CAR",
+"pos": "D",
+"proj": 47.1,
+"note": "",
+"rank": 231,
+"note_type": ""
+},
+{
+"id": "vincent-trocheck",
+"name": "Vincent Trocheck",
+"team": "UTA",
+"pos": "F",
+"proj": 77.8,
+"note": "Nouvelle équipe (avant : NYR)",
+"rank": 123,
+"note_type": "trade"
+},
+{
+"id": "tony-deangelo",
+"name": "Tony DeAngelo",
+"team": "NYI",
+"pos": "D",
+"proj": 46.9,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "simon-nemec",
+"name": "Simon Nemec",
+"team": "CGY",
+"pos": "D",
+"proj": 46.8,
+"note": "Nouvelle équipe (avant : NJD)",
+"rank": 227,
+"note_type": "trade"
+},
+{
+"id": "noah-hanifin",
+"name": "Noah Hanifin",
+"team": "VGK",
+"pos": "D",
+"proj": 46.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "jamie-drysdale",
+"name": "Jamie Drysdale",
+"team": "PHI",
+"pos": "D",
+"proj": 46.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "blues-de-st-louis-stl",
+"name": "Blues de St. Louis",
+"team": "STL",
+"pos": "T",
+"proj": 89.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "sharks-de-san-jose-sjs",
+"name": "Sharks de San Jose",
+"team": "SJS",
+"pos": "T",
+"proj": 89.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "dan-vladar",
+"name": "Dan Vladar",
+"team": "PHI",
+"pos": "G",
+"proj": 61.3,
+"note": "",
+"rank": 136,
+"note_type": ""
+},
+{
+"id": "carter-hart",
+"name": "Carter Hart",
+"team": "VGK",
+"pos": "G",
+"proj": 61.3,
+"note": "",
+"rank": 97,
+"note_type": ""
+},
+{
+"id": "joel-eriksson-ek",
+"name": "Joel Eriksson Ek",
+"team": "MIN",
+"pos": "F",
+"proj": 77.2,
+"note": "",
+"rank": 121,
+"note_type": ""
+},
+{
+"id": "gavin-mckenna",
+"name": "Gavin McKenna",
+"team": "TOR",
+"pos": "F",
+"proj": 77.0,
+"note": "Recrue — 1er choix au repêchage 2026",
+"rank": 113,
+"note_type": "rookie"
+},
+{
+"id": "mattias-ekholm",
+"name": "Mattias Ekholm",
+"team": "EDM",
+"pos": "D",
+"proj": 45.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "mikael-granlund",
+"name": "Mikael Granlund",
+"team": "ANA",
+"pos": "F",
+"proj": 76.5,
+"note": "",
+"rank": 224,
+"note_type": ""
+},
+{
+"id": "rangers-de-new-york-nyr",
+"name": "Rangers de New York",
+"team": "NYR",
+"pos": "T",
+"proj": 88.3,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "ducks-danaheim-ana",
+"name": "Ducks d’Anaheim",
+"team": "ANA",
+"pos": "T",
+"proj": 88.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "jimmy-snuggerud",
+"name": "Jimmy Snuggerud",
+"team": "STL",
+"pos": "F",
+"proj": 75.9,
+"note": "",
+"rank": 110,
+"note_type": ""
+},
+{
+"id": "josh-doan",
+"name": "Josh Doan",
+"team": "BUF",
+"pos": "F",
+"proj": 75.8,
+"note": "",
+"rank": 139,
+"note_type": ""
+},
+{
+"id": "mats-zuccarello",
+"name": "Mats Zuccarello",
+"team": "LAK",
+"pos": "F",
+"proj": 75.5,
+"note": "Nouvelle équipe (avant : MIN)",
+"rank": 190,
+"note_type": "trade"
+},
+{
+"id": "mike-matheson",
+"name": "Mike Matheson",
+"team": "MTL",
+"pos": "D",
+"proj": 44.3,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "john-gibson",
+"name": "John Gibson",
+"team": "DET",
+"pos": "G",
+"proj": 59.0,
+"note": "",
+"rank": 132,
+"note_type": ""
+},
+{
+"id": "elias-lindholm",
+"name": "Elias Lindholm",
+"team": "BOS",
+"pos": "F",
+"proj": 74.8,
+"note": "",
+"rank": 247,
+"note_type": ""
+},
+{
+"id": "patrick-kane",
+"name": "Patrick Kane",
+"team": "CHI",
+"pos": "F",
+"proj": 74.7,
+"note": "Nouvelle équipe (avant : DET)",
+"rank": 181,
+"note_type": "trade"
+},
+{
+"id": "aaron-ekblad",
+"name": "Aaron Ekblad",
+"team": "FLA",
+"pos": "D",
+"proj": 43.7,
+"note": "",
+"rank": 239,
+"note_type": ""
+},
+{
+"id": "ivar-stenberg",
+"name": "Ivar Stenberg",
+"team": "SJS",
+"pos": "F",
+"proj": 74.5,
+"note": "Recrue",
+"rank": 217,
+"note_type": "rookie"
+},
+{
+"id": "predators-de-nashville-nsh",
+"name": "Predators de Nashville",
+"team": "NSH",
+"pos": "T",
+"proj": 86.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "maple-leafs-de-toronto-tor",
+"name": "Maple Leafs de Toronto",
+"team": "TOR",
+"pos": "T",
+"proj": 86.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "jackson-blake",
+"name": "Jackson Blake",
+"team": "CAR",
+"pos": "F",
+"proj": 74.2,
+"note": "",
+"rank": 150,
+"note_type": ""
+},
+{
+"id": "zeev-buium",
+"name": "Zeev Buium",
+"team": "VAN",
+"pos": "D",
+"proj": 43.3,
+"note": "",
+"rank": 226,
+"note_type": ""
+},
+{
+"id": "ryan-ufko",
+"name": "Ryan Ufko",
+"team": "NSH",
+"pos": "D",
+"proj": 43.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "sean-durzi",
+"name": "Sean Durzi",
+"team": "NYR",
+"pos": "D",
+"proj": 43.0,
+"note": "Nouvelle équipe (avant : UTA)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "anton-lundell",
+"name": "Anton Lundell",
+"team": "FLA",
+"pos": "F",
+"proj": 73.8,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "zayne-parekh",
+"name": "Zayne Parekh",
+"team": "CGY",
+"pos": "D",
+"proj": 42.8,
+"note": "",
+"rank": 233,
+"note_type": ""
+},
+{
+"id": "jets-de-winnipeg-wpg",
+"name": "Jets de Winnipeg",
+"team": "WPG",
+"pos": "T",
+"proj": 85.9,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "marco-rossi",
+"name": "Marco Rossi",
+"team": "VAN",
+"pos": "F",
+"proj": 73.5,
+"note": "",
+"rank": 248,
+"note_type": ""
+},
+{
+"id": "cam-fowler",
+"name": "Cam Fowler",
+"team": "STL",
+"pos": "D",
+"proj": 42.5,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "brock-boeser",
+"name": "Brock Boeser",
+"team": "VAN",
+"pos": "F",
+"proj": 73.2,
+"note": "",
+"rank": 195,
+"note_type": ""
+},
+{
+"id": "denton-mateychuk",
+"name": "Denton Mateychuk",
+"team": "CBJ",
+"pos": "D",
+"proj": 42.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "kraken-de-seattle-sea",
+"name": "Kraken de Seattle",
+"team": "SEA",
+"pos": "T",
+"proj": 85.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "luke-evangelista",
+"name": "Luke Evangelista",
+"team": "NJD",
+"pos": "F",
+"proj": 72.7,
+"note": "Nouvelle équipe (avant : NSH)",
+"rank": 208,
+"note_type": "trade"
+},
+{
+"id": "mackenzie-blackwood",
+"name": "Mackenzie Blackwood",
+"team": "COL",
+"pos": "G",
+"proj": 56.7,
+"note": "Partage le filet avec Wedgewood",
+"rank": 79,
+"note_type": "role"
+},
+{
+"id": "jet-greaves",
+"name": "Jet Greaves",
+"team": "CBJ",
+"pos": "G",
+"proj": 56.7,
+"note": "",
+"rank": 104,
+"note_type": ""
+},
+{
+"id": "yaroslav-askarov",
+"name": "Yaroslav Askarov",
+"team": "SJS",
+"pos": "G",
+"proj": 56.7,
+"note": "",
+"rank": 173,
+"note_type": ""
+},
+{
+"id": "tyler-bertuzzi",
+"name": "Tyler Bertuzzi",
+"team": "CHI",
+"pos": "F",
+"proj": 72.4,
+"note": "",
+"rank": 203,
+"note_type": ""
+},
+{
+"id": "josh-norris",
+"name": "Josh Norris",
+"team": "BUF",
+"pos": "F",
+"proj": 72.2,
+"note": "",
+"rank": 215,
+"note_type": ""
+},
+{
+"id": "artyom-levshunov",
+"name": "Artyom Levshunov",
+"team": "CHI",
+"pos": "D",
+"proj": 40.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "zach-benson",
+"name": "Zach Benson",
+"team": "BUF",
+"pos": "F",
+"proj": 71.5,
+"note": "",
+"rank": 171,
+"note_type": ""
+},
+{
+"id": "owen-power",
+"name": "Owen Power",
+"team": "BUF",
+"pos": "D",
+"proj": 40.5,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "jacob-trouba",
+"name": "Jacob Trouba",
+"team": "SJS",
+"pos": "D",
+"proj": 40.3,
+"note": "Nouvelle équipe (avant : ANA)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "jake-walman",
+"name": "Jake Walman",
+"team": "EDM",
+"pos": "D",
+"proj": 40.3,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "mason-lohrei",
+"name": "Mason Lohrei",
+"team": "BOS",
+"pos": "D",
+"proj": 40.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "olen-zellweger",
+"name": "Olen Zellweger",
+"team": "BUF",
+"pos": "D",
+"proj": 40.0,
+"note": "Nouvelle équipe (avant : ANA)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "bobby-mcmann",
+"name": "Bobby McMann",
+"team": "SEA",
+"pos": "F",
+"proj": 70.8,
+"note": "",
+"rank": 177,
+"note_type": ""
+},
+{
+"id": "logan-stankoven",
+"name": "Logan Stankoven",
+"team": "CAR",
+"pos": "F",
+"proj": 70.7,
+"note": "",
+"rank": 160,
+"note_type": ""
+},
+{
+"id": "spencer-knight",
+"name": "Spencer Knight",
+"team": "CHI",
+"pos": "G",
+"proj": 54.5,
+"note": "",
+"rank": 148,
+"note_type": ""
+},
+{
+"id": "joel-hofer",
+"name": "Joel Hofer",
+"team": "STL",
+"pos": "G",
+"proj": 54.5,
+"note": "",
+"rank": 131,
+"note_type": ""
+},
+{
+"id": "egor-chinakhov",
+"name": "Egor Chinakhov",
+"team": "PIT",
+"pos": "F",
+"proj": 70.4,
+"note": "",
+"rank": 164,
+"note_type": ""
+},
+{
+"id": "jake-debrusk",
+"name": "Jake DeBrusk",
+"team": "VAN",
+"pos": "F",
+"proj": 70.3,
+"note": "",
+"rank": 206,
+"note_type": ""
+},
+{
+"id": "jason-zucker",
+"name": "Jason Zucker",
+"team": "BUF",
+"pos": "F",
+"proj": 70.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "anthony-cirelli",
+"name": "Anthony Cirelli",
+"team": "TBL",
+"pos": "F",
+"proj": 70.0,
+"note": "",
+"rank": 223,
+"note_type": ""
+},
+{
+"id": "matvei-michkov",
+"name": "Matvei Michkov",
+"team": "PHI",
+"pos": "F",
+"proj": 70.0,
+"note": "",
+"rank": 152,
+"note_type": ""
+},
+{
+"id": "blackhawks-de-chicago-chi",
+"name": "Blackhawks de Chicago",
+"team": "CHI",
+"pos": "T",
+"proj": 82.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "pierre-luc-dubois",
+"name": "Pierre-Luc Dubois",
+"team": "WSH",
+"pos": "F",
+"proj": 69.8,
+"note": "",
+"rank": 216,
+"note_type": ""
+},
+{
+"id": "frank-nazar",
+"name": "Frank Nazar",
+"team": "CHI",
+"pos": "F",
+"proj": 69.5,
+"note": "",
+"rank": 212,
+"note_type": ""
+},
+{
+"id": "jordan-eberle",
+"name": "Jordan Eberle",
+"team": "SEA",
+"pos": "F",
+"proj": 69.4,
+"note": "",
+"rank": 225,
+"note_type": ""
+},
+{
+"id": "tyler-seguin",
+"name": "Tyler Seguin",
+"team": "DAL",
+"pos": "F",
+"proj": 69.4,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "chandler-stephenson",
+"name": "Chandler Stephenson",
+"team": "SEA",
+"pos": "F",
+"proj": 69.3,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "ryan-leonard",
+"name": "Ryan Leonard",
+"team": "WSH",
+"pos": "F",
+"proj": 69.2,
+"note": "",
+"rank": 183,
+"note_type": ""
+},
+{
+"id": "chris-kreider",
+"name": "Chris Kreider",
+"team": "ANA",
+"pos": "F",
+"proj": 69.1,
+"note": "",
+"rank": 220,
+"note_type": ""
+},
+{
+"id": "timo-meier",
+"name": "Timo Meier",
+"team": "NJD",
+"pos": "F",
+"proj": 69.0,
+"note": "",
+"rank": 115,
+"note_type": ""
+},
+{
+"id": "igor-chernyshov",
+"name": "Igor Chernyshov",
+"team": "SJS",
+"pos": "F",
+"proj": 68.7,
+"note": "",
+"rank": 234,
+"note_type": ""
+},
+{
+"id": "alexis-lafreniere",
+"name": "Alexis Lafrenière",
+"team": "NYR",
+"pos": "F",
+"proj": 68.5,
+"note": "",
+"rank": 120,
+"note_type": ""
+},
+{
+"id": "mason-marchment",
+"name": "Mason Marchment",
+"team": "SJS",
+"pos": "F",
+"proj": 68.5,
+"note": "Nouvelle équipe (avant : SEA,CBJ)",
+"rank": 205,
+"note_type": "trade"
+},
+{
+"id": "ryan-mcleod",
+"name": "Ryan McLeod",
+"team": "BUF",
+"pos": "F",
+"proj": 68.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "arturs-silovs",
+"name": "Arturs Silovs",
+"team": "PIT",
+"pos": "G",
+"proj": 52.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "gabe-perreault",
+"name": "Gabe Perreault",
+"team": "NYR",
+"pos": "F",
+"proj": 67.8,
+"note": "",
+"rank": 202,
+"note_type": ""
+},
+{
+"id": "carter-verhaeghe",
+"name": "Carter Verhaeghe",
+"team": "FLA",
+"pos": "F",
+"proj": 67.7,
+"note": "",
+"rank": 151,
+"note_type": ""
+},
+{
+"id": "frederik-andersen",
+"name": "Frederik Andersen",
+"team": "EDM",
+"pos": "G",
+"proj": 51.7,
+"note": "Blessé — absent jusqu’au ~20 oct.",
+"rank": 185,
+"note_type": "injury"
+},
+{
+"id": "matt-coronato",
+"name": "Matt Coronato",
+"team": "CGY",
+"pos": "F",
+"proj": 67.1,
+"note": "",
+"rank": 184,
+"note_type": ""
+},
+{
+"id": "gabriel-landeskog",
+"name": "Gabriel Landeskog",
+"team": "COL",
+"pos": "F",
+"proj": 66.9,
+"note": "",
+"rank": 200,
+"note_type": ""
+},
+{
+"id": "john-jason-peterka",
+"name": "John-Jason Peterka",
+"team": "BOS",
+"pos": "F",
+"proj": 66.8,
+"note": "",
+"rank": 126,
+"note_type": ""
+},
+{
+"id": "aliaksei-protas",
+"name": "Aliaksei Protas",
+"team": "WSH",
+"pos": "F",
+"proj": 66.6,
+"note": "",
+"rank": 194,
+"note_type": ""
+},
+{
+"id": "william-karlsson",
+"name": "William Karlsson",
+"team": "VGK",
+"pos": "F",
+"proj": 66.5,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "charlie-coyle",
+"name": "Charlie Coyle",
+"team": "CBJ",
+"pos": "F",
+"proj": 66.4,
+"note": "",
+"rank": 232,
+"note_type": ""
+},
+{
+"id": "teuvo-teravainen",
+"name": "Teuvo Teravainen",
+"team": "CHI",
+"pos": "F",
+"proj": 65.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "flames-de-calgary-cgy",
+"name": "Flames de Calgary",
+"team": "CGY",
+"pos": "T",
+"proj": 77.8,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "valeri-nichushkin",
+"name": "Valeri Nichushkin",
+"team": "CBJ",
+"pos": "F",
+"proj": 65.5,
+"note": "Nouvelle équipe (avant : COL)",
+"rank": 158,
+"note_type": "trade"
+},
+{
+"id": "pavel-buchnevich",
+"name": "Pavel Buchnevich",
+"team": "STL",
+"pos": "F",
+"proj": 65.0,
+"note": "",
+"rank": 246,
+"note_type": ""
+},
+{
+"id": "mason-mctavish",
+"name": "Mason McTavish",
+"team": "STL",
+"pos": "F",
+"proj": 64.9,
+"note": "Nouvelle équipe (avant : ANA)",
+"rank": 176,
+"note_type": "trade"
+},
+{
+"id": "victor-eklund",
+"name": "Victor Eklund",
+"team": "NYI",
+"pos": "F",
+"proj": 64.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "jack-quinn",
+"name": "Jack Quinn",
+"team": "BUF",
+"pos": "F",
+"proj": 64.5,
+"note": "",
+"rank": 230,
+"note_type": ""
+},
+{
+"id": "cole-perfetti",
+"name": "Cole Perfetti",
+"team": "WPG",
+"pos": "F",
+"proj": 64.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "darcy-kuemper",
+"name": "Darcy Kuemper",
+"team": "LAK",
+"pos": "G",
+"proj": 47.7,
+"note": "",
+"rank": 182,
+"note_type": ""
+},
+{
+"id": "connor-mcmichael",
+"name": "Connor McMichael",
+"team": "STL",
+"pos": "F",
+"proj": 63.1,
+"note": "Nouvelle équipe (avant : WSH)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "mavrik-bourque",
+"name": "Mavrik Bourque",
+"team": "NSH",
+"pos": "F",
+"proj": 62.9,
+"note": "Nouvelle équipe (avant : DAL)",
+"rank": 221,
+"note_type": "trade"
+},
+{
+"id": "artturi-lehkonen",
+"name": "Artturi Lehkonen",
+"team": "COL",
+"pos": "F",
+"proj": 62.8,
+"note": "",
+"rank": 154,
+"note_type": ""
+},
+{
+"id": "michael-misa",
+"name": "Michael Misa",
+"team": "SJS",
+"pos": "F",
+"proj": 62.7,
+"note": "Jeune (2e saison)",
+"rank": 249,
+"note_type": "young"
+},
+{
+"id": "anders-lee",
+"name": "Anders Lee",
+"team": "UTA",
+"pos": "F",
+"proj": 62.6,
+"note": "Nouvelle équipe (avant : NYI)",
+"rank": 237,
+"note_type": "trade"
+},
+{
+"id": "anthony-mantha",
+"name": "Anthony Mantha",
+"team": "NJD",
+"pos": "F",
+"proj": 62.5,
+"note": "Nouvelle équipe (avant : PIT)",
+"rank": 229,
+"note_type": "trade"
+},
+{
+"id": "morgan-frost",
+"name": "Morgan Frost",
+"team": "CGY",
+"pos": "F",
+"proj": 61.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "shane-pinto",
+"name": "Shane Pinto",
+"team": "OTT",
+"pos": "F",
+"proj": 61.4,
+"note": "",
+"rank": 236,
+"note_type": ""
+},
+{
+"id": "dustin-wolf",
+"name": "Dustin Wolf",
+"team": "CGY",
+"pos": "G",
+"proj": 45.4,
+"note": "",
+"rank": 188,
+"note_type": ""
+},
+{
+"id": "akira-schmid",
+"name": "Akira Schmid",
+"team": "FLA",
+"pos": "G",
+"proj": 45.4,
+"note": "",
+"rank": 210,
+"note_type": ""
+},
+{
+"id": "joey-daccord",
+"name": "Joey Daccord",
+"team": "SEA",
+"pos": "G",
+"proj": 45.4,
+"note": "",
+"rank": 175,
+"note_type": ""
+},
+{
+"id": "collin-graf",
+"name": "Collin Graf",
+"team": "SJS",
+"pos": "F",
+"proj": 61.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "mackie-samoskevich",
+"name": "Mackie Samoskevich",
+"team": "SEA",
+"pos": "F",
+"proj": 61.0,
+"note": "Nouvelle équipe (avant : FLA)",
+"rank": 214,
+"note_type": "trade"
+},
+{
+"id": "konsta-helenius",
+"name": "Konsta Helenius",
+"team": "BUF",
+"pos": "F",
+"proj": 61.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "ivan-barbashev",
+"name": "Ivan Barbashev",
+"team": "VGK",
+"pos": "F",
+"proj": 60.7,
+"note": "",
+"rank": 174,
+"note_type": ""
+},
+{
+"id": "alexander-wennberg",
+"name": "Alexander Wennberg",
+"team": "SJS",
+"pos": "F",
+"proj": 60.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "kevin-fiala",
+"name": "Kevin Fiala",
+"team": "LAK",
+"pos": "F",
+"proj": 60.6,
+"note": "",
+"rank": 109,
+"note_type": ""
+},
+{
+"id": "tyson-foerster",
+"name": "Tyson Foerster",
+"team": "PHI",
+"pos": "F",
+"proj": 60.6,
+"note": "",
+"rank": 201,
+"note_type": ""
+},
+{
+"id": "troy-terry",
+"name": "Troy Terry",
+"team": "ANA",
+"pos": "F",
+"proj": 60.2,
+"note": "Blessé (hanche) — absent jusqu’à mi-novembre",
+"rank": 250,
+"note_type": "injury"
+},
+{
+"id": "kaapo-kakko",
+"name": "Kaapo Kakko",
+"team": "SEA",
+"pos": "F",
+"proj": 60.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "taylor-hall",
+"name": "Taylor Hall",
+"team": "CAR",
+"pos": "F",
+"proj": 60.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "canucks-de-vancouver-van",
+"name": "Canucks de Vancouver",
+"team": "VAN",
+"pos": "T",
+"proj": 72.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "noah-cates",
+"name": "Noah Cates",
+"team": "PHI",
+"pos": "F",
+"proj": 59.8,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "jaden-schwartz",
+"name": "Jaden Schwartz",
+"team": "COL",
+"pos": "F",
+"proj": 59.7,
+"note": "Nouvelle équipe (avant : SEA)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "kyle-palmieri",
+"name": "Kyle Palmieri",
+"team": "NYI",
+"pos": "F",
+"proj": 59.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "brayden-schenn",
+"name": "Brayden Schenn",
+"team": "NYI",
+"pos": "F",
+"proj": 59.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "alex-newhook",
+"name": "Alex Newhook",
+"team": "MTL",
+"pos": "F",
+"proj": 59.4,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "will-cuylle",
+"name": "Will Cuylle",
+"team": "NYR",
+"pos": "F",
+"proj": 59.3,
+"note": "",
+"rank": 187,
+"note_type": ""
+},
+{
+"id": "jonathan-huberdeau",
+"name": "Jonathan Huberdeau",
+"team": "CGY",
+"pos": "F",
+"proj": 59.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "matvei-gridin",
+"name": "Matvei Gridin",
+"team": "CGY",
+"pos": "F",
+"proj": 59.1,
+"note": "",
+"rank": 218,
+"note_type": ""
+},
+{
+"id": "pyotr-kochetkov",
+"name": "Pyotr Kochetkov",
+"team": "CAR",
+"pos": "G",
+"proj": 43.1,
+"note": "",
+"rank": 144,
+"note_type": ""
+},
+{
+"id": "tyler-toffoli",
+"name": "Tyler Toffoli",
+"team": "SJS",
+"pos": "F",
+"proj": 58.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "matty-beniers",
+"name": "Matty Beniers",
+"team": "SEA",
+"pos": "F",
+"proj": 58.5,
+"note": "",
+"rank": 213,
+"note_type": ""
+},
+{
+"id": "alex-laferriere",
+"name": "Alex Laferriere",
+"team": "LAK",
+"pos": "F",
+"proj": 58.4,
+"note": "",
+"rank": 222,
+"note_type": ""
+},
+{
+"id": "matt-savoie",
+"name": "Matt Savoie",
+"team": "EDM",
+"pos": "F",
+"proj": 58.2,
+"note": "",
+"rank": 207,
+"note_type": ""
+},
+{
+"id": "calum-ritchie",
+"name": "Calum Ritchie",
+"team": "NYI",
+"pos": "F",
+"proj": 58.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "ryan-hartman",
+"name": "Ryan Hartman",
+"team": "MIN",
+"pos": "F",
+"proj": 58.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "christian-dvorak",
+"name": "Christian Dvorak",
+"team": "PHI",
+"pos": "F",
+"proj": 57.8,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "conor-garland",
+"name": "Conor Garland",
+"team": "CBJ",
+"pos": "F",
+"proj": 57.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "andrei-kuzmenko",
+"name": "Andrei Kuzmenko",
+"team": "PIT",
+"pos": "F",
+"proj": 57.6,
+"note": "Nouvelle équipe (avant : LAK)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "sean-monahan",
+"name": "Sean Monahan",
+"team": "CBJ",
+"pos": "F",
+"proj": 57.5,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "jonathan-marchessault",
+"name": "Jonathan Marchessault",
+"team": "NSH",
+"pos": "F",
+"proj": 57.5,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "jamie-benn",
+"name": "Jamie Benn",
+"team": "DAL",
+"pos": "F",
+"proj": 57.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "blake-coleman",
+"name": "Blake Coleman",
+"team": "MIN",
+"pos": "F",
+"proj": 56.9,
+"note": "Nouvelle équipe (avant : CGY)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "alex-lyon",
+"name": "Alex Lyon",
+"team": "BUF",
+"pos": "G",
+"proj": 40.9,
+"note": "",
+"rank": 209,
+"note_type": ""
+},
+{
+"id": "tristan-jarry",
+"name": "Tristan Jarry",
+"team": "EDM",
+"pos": "G",
+"proj": 40.9,
+"note": "",
+"rank": 241,
+"note_type": ""
+},
+{
+"id": "adin-hill",
+"name": "Adin Hill",
+"team": "VGK",
+"pos": "G",
+"proj": 40.9,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "ben-kindel",
+"name": "Ben Kindel",
+"team": "PIT",
+"pos": "F",
+"proj": 56.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "oliver-bjorkstrand",
+"name": "Oliver Bjorkstrand",
+"team": "NYR",
+"pos": "F",
+"proj": 56.3,
+"note": "Nouvelle équipe (avant : TBL)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "ilya-protas",
+"name": "Ilya Protas",
+"team": "WSH",
+"pos": "F",
+"proj": 56.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "brett-howden",
+"name": "Brett Howden",
+"team": "VGK",
+"pos": "F",
+"proj": 55.9,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "barrett-hayton",
+"name": "Barrett Hayton",
+"team": "UTA",
+"pos": "F",
+"proj": 55.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "dawson-mercer",
+"name": "Dawson Mercer",
+"team": "NJD",
+"pos": "F",
+"proj": 55.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "roman-kantserov",
+"name": "Roman Kantserov",
+"team": "CHI",
+"pos": "F",
+"proj": 55.0,
+"note": "Recrue",
+"rank": 211,
+"note_type": "rookie"
+},
+{
+"id": "casey-mittelstadt",
+"name": "Casey Mittelstadt",
+"team": "BOS",
+"pos": "F",
+"proj": 54.9,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "erik-haula",
+"name": "Erik Haula",
+"team": "LAK",
+"pos": "F",
+"proj": 54.8,
+"note": "Nouvelle équipe (avant : NSH)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "sergei-murashov",
+"name": "Sergei Murashov",
+"team": "PIT",
+"pos": "G",
+"proj": 38.6,
+"note": "",
+"rank": 240,
+"note_type": ""
+},
+{
+"id": "alex-nedeljkovic",
+"name": "Alex Nedeljkovic",
+"team": "SJS",
+"pos": "G",
+"proj": 38.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "jordan-binnington",
+"name": "Jordan Binnington",
+"team": "STL",
+"pos": "G",
+"proj": 38.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "joseph-woll",
+"name": "Joseph Woll",
+"team": "PHI",
+"pos": "G",
+"proj": 38.6,
+"note": "",
+"rank": 243,
+"note_type": ""
+},
+{
+"id": "claude-giroux",
+"name": "Claude Giroux",
+"team": "OTT",
+"pos": "F",
+"proj": 54.5,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "jack-roslovic",
+"name": "Jack Roslovic",
+"team": "TOR",
+"pos": "F",
+"proj": 54.5,
+"note": "Nouvelle équipe (avant : EDM)",
+"rank": 245,
+"note_type": "trade"
+},
+{
+"id": "jake-neighbours",
+"name": "Jake Neighbours",
+"team": "STL",
+"pos": "F",
+"proj": 54.4,
+"note": "",
+"rank": 219,
+"note_type": ""
+},
+{
+"id": "boone-jenner",
+"name": "Boone Jenner",
+"team": "WSH",
+"pos": "F",
+"proj": 54.3,
+"note": "Nouvelle équipe (avant : CBJ)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "viktor-arvidsson",
+"name": "Viktor Arvidsson",
+"team": "DET",
+"pos": "F",
+"proj": 54.0,
+"note": "Nouvelle équipe (avant : BOS)",
+"rank": 198,
+"note_type": "trade"
+},
+{
+"id": "matthew-wood",
+"name": "Matthew Wood",
+"team": "NSH",
+"pos": "F",
+"proj": 53.9,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "kiefer-sherwood",
+"name": "Kiefer Sherwood",
+"team": "SJS",
+"pos": "F",
+"proj": 53.3,
+"note": "",
+"rank": 228,
+"note_type": ""
+},
+{
+"id": "fabian-zetterlund",
+"name": "Fabian Zetterlund",
+"team": "OTT",
+"pos": "F",
+"proj": 53.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "jiri-kulich",
+"name": "Jiri Kulich",
+"team": "BUF",
+"pos": "F",
+"proj": 53.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "zachary-bolduc",
+"name": "Zachary Bolduc",
+"team": "MTL",
+"pos": "F",
+"proj": 53.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "eetu-luostarinen",
+"name": "Eetu Luostarinen",
+"team": "FLA",
+"pos": "F",
+"proj": 52.9,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "eeli-tolvanen",
+"name": "Eeli Tolvanen",
+"team": "NYR",
+"pos": "F",
+"proj": 52.8,
+"note": "Nouvelle équipe (avant : SEA)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "dmitri-voronkov",
+"name": "Dmitri Voronkov",
+"team": "CBJ",
+"pos": "F",
+"proj": 52.8,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "anton-forsberg",
+"name": "Anton Forsberg",
+"team": "LAK",
+"pos": "G",
+"proj": 36.3,
+"note": "",
+"rank": 196,
+"note_type": ""
+},
+{
+"id": "anthony-stolarz",
+"name": "Anthony Stolarz",
+"team": "TOR",
+"pos": "G",
+"proj": 36.3,
+"note": "",
+"rank": 242,
+"note_type": ""
+},
+{
+"id": "connor-brown",
+"name": "Connor Brown",
+"team": "NJD",
+"pos": "F",
+"proj": 52.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "james-hagens",
+"name": "James Hagens",
+"team": "BOS",
+"pos": "F",
+"proj": 52.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "oliver-kapanen",
+"name": "Oliver Kapanen",
+"team": "MTL",
+"pos": "F",
+"proj": 51.9,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "ryan-strome",
+"name": "Ryan Strome",
+"team": "CGY",
+"pos": "F",
+"proj": 51.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "arseny-gritsyuk",
+"name": "Arseny Gritsyuk",
+"team": "NJD",
+"pos": "F",
+"proj": 50.8,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "owen-tippett",
+"name": "Owen Tippett",
+"team": "PHI",
+"pos": "F",
+"proj": 50.7,
+"note": "",
+"rank": 157,
+"note_type": ""
+},
+{
+"id": "matias-maccelli",
+"name": "Matias Maccelli",
+"team": "NYI",
+"pos": "F",
+"proj": 50.7,
+"note": "Nouvelle équipe (avant : TOR)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "joel-farabee",
+"name": "Joel Farabee",
+"team": "CGY",
+"pos": "F",
+"proj": 50.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "justin-brazeau",
+"name": "Justin Brazeau",
+"team": "PIT",
+"pos": "F",
+"proj": 50.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "lawson-crouse",
+"name": "Lawson Crouse",
+"team": "UTA",
+"pos": "F",
+"proj": 50.4,
+"note": "",
+"rank": 204,
+"note_type": ""
+},
+{
+"id": "jake-evans",
+"name": "Jake Evans",
+"team": "MTL",
+"pos": "F",
+"proj": 50.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "andrew-copp",
+"name": "Andrew Copp",
+"team": "DET",
+"pos": "F",
+"proj": 50.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "mikael-backlund",
+"name": "Mikael Backlund",
+"team": "CGY",
+"pos": "F",
+"proj": 50.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "danila-yurov",
+"name": "Danila Yurov",
+"team": "MIN",
+"pos": "F",
+"proj": 50.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "jacob-fowler",
+"name": "Jacob Fowler",
+"team": "MTL",
+"pos": "G",
+"proj": 34.1,
+"note": "",
+"rank": 238,
+"note_type": ""
+},
+{
+"id": "charlie-lindgren",
+"name": "Charlie Lindgren",
+"team": "WSH",
+"pos": "G",
+"proj": 34.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "thomas-novak",
+"name": "Thomas Novak",
+"team": "PIT",
+"pos": "F",
+"proj": 50.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "andre-burakovsky",
+"name": "Andre Burakovsky",
+"team": "OTT",
+"pos": "F",
+"proj": 50.0,
+"note": "Nouvelle équipe (avant : CHI)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "shane-wright",
+"name": "Shane Wright",
+"team": "SEA",
+"pos": "F",
+"proj": 49.9,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "bobby-brink",
+"name": "Bobby Brink",
+"team": "MIN",
+"pos": "F",
+"proj": 49.8,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "dalibor-dvorsky",
+"name": "Dalibor Dvorsky",
+"team": "STL",
+"pos": "F",
+"proj": 49.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "vasily-podkolzin",
+"name": "Vasily Podkolzin",
+"team": "EDM",
+"pos": "F",
+"proj": 49.4,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "ridly-greig",
+"name": "Ridly Greig",
+"team": "OTT",
+"pos": "F",
+"proj": 49.4,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "emil-heineman",
+"name": "Emil Heineman",
+"team": "NYI",
+"pos": "F",
+"proj": 49.4,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "nick-lardis",
+"name": "Nick Lardis",
+"team": "CHI",
+"pos": "F",
+"proj": 49.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "fraser-minten",
+"name": "Fraser Minten",
+"team": "BOS",
+"pos": "F",
+"proj": 49.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "trevor-moore",
+"name": "Trevor Moore",
+"team": "LAK",
+"pos": "F",
+"proj": 49.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "emmitt-finnie",
+"name": "Emmitt Finnie",
+"team": "DET",
+"pos": "F",
+"proj": 49.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "maxim-shabanov",
+"name": "Maxim Shabanov",
+"team": "MIN",
+"pos": "F",
+"proj": 49.0,
+"note": "Nouvelle équipe (avant : NYI)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "easton-cowan",
+"name": "Easton Cowan",
+"team": "TOR",
+"pos": "F",
+"proj": 48.9,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "marco-kasper",
+"name": "Marco Kasper",
+"team": "DET",
+"pos": "F",
+"proj": 48.8,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "evan-rodrigues",
+"name": "Evan Rodrigues",
+"team": "NJD",
+"pos": "F",
+"proj": 48.7,
+"note": "Nouvelle équipe (avant : FLA)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "cole-sillinger",
+"name": "Cole Sillinger",
+"team": "CBJ",
+"pos": "F",
+"proj": 48.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "ryan-donato",
+"name": "Ryan Donato",
+"team": "CHI",
+"pos": "F",
+"proj": 48.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "pius-suter",
+"name": "Pius Suter",
+"team": "STL",
+"pos": "F",
+"proj": 48.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "linus-karlsson",
+"name": "Linus Karlsson",
+"team": "VAN",
+"pos": "F",
+"proj": 48.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "gage-goncalves",
+"name": "Gage Goncalves",
+"team": "TBL",
+"pos": "F",
+"proj": 48.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "victor-olofsson",
+"name": "Victor Olofsson",
+"team": "VGK",
+"pos": "F",
+"proj": 48.1,
+"note": "Nouvelle équipe (avant : COL,CGY)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "justin-hryckowian",
+"name": "Justin Hryckowian",
+"team": "DAL",
+"pos": "F",
+"proj": 48.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "alex-killorn",
+"name": "Alex Killorn",
+"team": "ANA",
+"pos": "F",
+"proj": 48.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "thatcher-demko",
+"name": "Thatcher Demko",
+"team": "VAN",
+"pos": "G",
+"proj": 31.8,
+"note": "Blessé (hanche)",
+"rank": 0,
+"note_type": "injury"
+},
+{
+"id": "daniil-tarasov",
+"name": "Daniil Tarasov",
+"team": "DET",
+"pos": "G",
+"proj": 31.8,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "kent-johnson",
+"name": "Kent Johnson",
+"team": "CBJ",
+"pos": "F",
+"proj": 47.6,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "ross-colton",
+"name": "Ross Colton",
+"team": "NSH",
+"pos": "F",
+"proj": 47.4,
+"note": "Nouvelle équipe (avant : COL)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "nick-robertson",
+"name": "Nick Robertson",
+"team": "PIT",
+"pos": "F",
+"proj": 47.0,
+"note": "Nouvelle équipe (avant : TOR)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "nicolas-roy",
+"name": "Nicolas Roy",
+"team": "COL",
+"pos": "F",
+"proj": 46.9,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "sam-steel",
+"name": "Sam Steel",
+"team": "DAL",
+"pos": "F",
+"proj": 46.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "elvis-merzlikins",
+"name": "Elvis Merzlikins",
+"team": "CBJ",
+"pos": "G",
+"proj": 29.5,
+"note": "Blessé (épaule) — absent jusqu’au ~24 oct.",
+"rank": 0,
+"note_type": "injury"
+},
+{
+"id": "filip-gustavsson",
+"name": "Filip Gustavsson",
+"team": "MIN",
+"pos": "G",
+"proj": 29.5,
+"note": "Chirurgie à la hanche",
+"rank": 169,
+"note_type": "other"
+},
+{
+"id": "corey-perry",
+"name": "Corey Perry",
+"team": "LAK",
+"pos": "F",
+"proj": 45.4,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "alexandre-texier",
+"name": "Alexandre Texier",
+"team": "MTL",
+"pos": "F",
+"proj": 45.4,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "kasperi-kapanen",
+"name": "Kasperi Kapanen",
+"team": "EDM",
+"pos": "F",
+"proj": 45.3,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "peyton-krebs",
+"name": "Peyton Krebs",
+"team": "BUF",
+"pos": "F",
+"proj": 44.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "sean-couturier",
+"name": "Sean Couturier",
+"team": "PHI",
+"pos": "F",
+"proj": 44.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "parker-kelly",
+"name": "Parker Kelly",
+"team": "COL",
+"pos": "F",
+"proj": 44.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "jack-drury",
+"name": "Jack Drury",
+"team": "NSH",
+"pos": "F",
+"proj": 44.2,
+"note": "Nouvelle équipe (avant : COL)",
+"rank": 0,
+"note_type": "trade"
+},
+{
+"id": "seth-jarvis",
+"name": "Seth Jarvis",
+"team": "CAR",
+"pos": "F",
+"proj": 44.1,
+"note": "Blessé (épaule) — absent jusqu’à fin décembre",
+"rank": 118,
+"note_type": "injury"
+},
+{
+"id": "vladislav-namestnikov",
+"name": "Vladislav Namestnikov",
+"team": "WPG",
+"pos": "F",
+"proj": 44.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "simon-holmstrom",
+"name": "Simon Holmstrom",
+"team": "NYI",
+"pos": "F",
+"proj": 43.9,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "berkly-catton",
+"name": "Berkly Catton",
+"team": "SEA",
+"pos": "F",
+"proj": 43.9,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "samuel-ersson",
+"name": "Samuel Ersson",
+"team": "OTT",
+"pos": "G",
+"proj": 27.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "frank-vatrano",
+"name": "Frank Vatrano",
+"team": "ANA",
+"pos": "F",
+"proj": 43.1,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "yanni-gourde",
+"name": "Yanni Gourde",
+"team": "TBL",
+"pos": "F",
+"proj": 42.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "jean-gabriel-pageau",
+"name": "Jean-Gabriel Pageau",
+"team": "NYI",
+"pos": "F",
+"proj": 41.2,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "devin-cooley",
+"name": "Devin Cooley",
+"team": "CGY",
+"pos": "G",
+"proj": 25.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "casey-desmith",
+"name": "Casey DeSmith",
+"team": "DAL",
+"pos": "G",
+"proj": 25.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "kevin-lankinen",
+"name": "Kevin Lankinen",
+"team": "VAN",
+"pos": "G",
+"proj": 25.0,
+"note": "",
+"rank": 0,
+"note_type": ""
+},
+{
+"id": "philipp-grubauer",
+"name": "Philipp Grubauer",
+"team": "SEA",
+"pos": "G",
+"proj": 22.7,
+"note": "",
+"rank": 0,
+"note_type": ""
+}
+]

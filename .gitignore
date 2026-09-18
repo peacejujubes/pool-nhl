@@ -1,0 +1,19 @@
+# Runtime data (SQLite DB) — lives on the host / Unraid volume, not in git
+data/
+*.db
+*.db-journal
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Real Discord user-ID mapping (names -> Discord snowflake IDs) — personal
+# data, kept local only. Copy initial_discord_mentions.example.json to
+# initial_discord_mentions.json and fill in real IDs to use this feature.
+data_seed/initial_discord_mentions.json

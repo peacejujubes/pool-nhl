@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+{% block title %}Tableau de bord — Les chums{% endblock %}
+{% block content %}
+
+{% if statuses %}
+<div class="panel">
+  <div class="ticker-wrap">
+    {% for r in statuses %}
+    <span class="tchip {{ r.player.note_type }}">
+      <span class="tdot"></span>
+      <b>{{ r.player.name }}</b>
+      <span class="who">({{ r.pooler_name }}) — {{ r.player.note }}</span>
+    </span>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+{% if refresh.detail and refresh.detail.season_started == false and refresh.detail.nhl_season_seen %}
+<div class="panel" style="border-color:var(--warn-soft)">
+  <div class="panel-body small">
+    <b>La saison 2026-27 n'a pas encore commencé</b> — l'API de la LNH renvoie encore la saison
+    {{ refresh.detail.nhl_season_seen[:4] }}-{{ refresh.detail.nhl_season_seen[6:] }} (la dernière complétée)
+    comme "actuelle". C'est normal que tout le monde soit à 0 : les points s'accumuleront une fois les
+    vrais matchs 2026-27 commencés. Voir <a href="/calendrier">Calendrier</a> pour les prochains matchs.
+  </div>
+</div>
+{% endif %}
+
+<div class="panel">
+  <div class="panel-head">
+    <h2><span class="dotbar"></span>Classement</h2>
+    <div class="refreshbox">
+      <span class="dot {{ refresh.status }}"></span>
+      <span>
+        {% if refresh.at %}Actualisé : {{ refresh.at.replace('T',' ') }}{% else %}Jamais actualisé{% endif %}
+      </span>
+      <a class="btn small" href="https://discord.gg/H9KB5wUSv" target="_blank" rel="noopener noreferrer">💬 Rejoindre le Discord</a>
+      <form method="post" action="/refresh" style="margin:0">
+        <button class="btn small" type="submit">Actualiser les stats LNH</button>
+      </form>
+    </div>
+  </div>
+  <div class="panel-body" style="padding:0">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Pooler</th>
+          <th>Tendance</th>
+          <th class="r">Depuis la dernière actu.</th>
+          <th class="r">Ajustements</th>
+          <th class="r">Points totaux</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for pooler_id, t in ranked %}
+        {% set mv = movement[pooler_id] %}
+        {% set spark = sparks.get(pooler_id, []) %}
+        <tr class="{{ 'me' if t.name == 'Vincent Belle-Isle' else '' }}">
+          <td>
+            {% if loop.index == 1 %}<span class="medal g">1</span>
+            {% elif loop.index == 2 %}<span class="medal s">2</span>
+            {% elif loop.index == 3 %}<span class="medal b">3</span>
+            {% else %}<span class="medal n">{{ loop.index }}</span>{% endif %}
+          </td>
+          <td><a href="/equipe/{{ pooler_id }}" style="font-weight:800; text-decoration:none">{{ t.name }}</a></td>
+          <td>
+            {% if spark|length > 1 %}
+            {% set trend = sparkline_trend(spark) %}
+            <svg class="spark {{ trend }}" width="90" height="26" viewBox="0 0 90 26">
+              <polyline points="{{ sparkline_points(spark) }}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            {% else %}
+            <span class="small">—</span>
+            {% endif %}
+          </td>
+          <td class="r">
+            {% if mv.delta is not none %}
+            <span class="move {{ 'up' if mv.delta > 0 else ('down' if mv.delta < 0 else 'flat') }}">
+              {% if mv.delta > 0 %}▲{% elif mv.delta < 0 %}▼{% else %}▬{% endif %} {{ '%+.0f'|format(mv.delta) }}
+            </span>
+            {% if mv.rank_change and mv.rank_change != 0 %}
+            <span class="small">({{ '%+d'|format(mv.rank_change) }} rang{{ 's' if mv.rank_change|abs > 1 else '' }})</span>
+            {% endif %}
+            {% else %}
+            <span class="small">—</span>
+            {% endif %}
+          </td>
+          <td class="r num small">{{ '%+.0f'|format(t.adjustments_total) if t.adjustments_total else '—' }}</td>
+          <td class="r num" style="font-weight:800; font-size:15px">{{ '%.0f'|format(t.total) }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% if not has_history %}
+  <div class="panel-body small" style="padding-top:0">Les tendances et mouvements de classement apparaîtront après la prochaine actualisation (il faut au moins deux instantanés pour comparer).</div>
+  {% endif %}
+</div>
+
+{% if trending %}
+<div class="panel">
+  <div class="panel-head"><h2><span class="dotbar" style="background:var(--hot)"></span>En chaleur depuis la dernière actualisation</h2></div>
+  {% for r in trending %}
+  <div class="hot-row">
+    <span class="flame">+{{ '%.0f'|format(r.delta) }} pt{{ 's' if r.delta != 1 }}</span>
+    <span class="posdot {{ r.player.pos }}"></span>
+    <span class="nm">{{ r.player.name }}</span>
+    <span class="own">{{ r.pooler_name }}</span>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<div class="panel">
+  <div class="panel-head"><h2><span class="dotbar" style="background:var(--violet)"></span>Meneurs de la ligue</h2></div>
+  <div class="leaders-grid">
+    <div class="leaders-col">
+      <h3><span class="posdot F"></span>Patineurs</h3>
+      <ol>
+        {% for r in leaders.skaters %}
+        <li>
+          <span class="lrank">{{ loop.index }}</span>
+          <span class="pos {{ r.player.pos }}" style="font-size:9.5px">{{ r.player.pos }}</span>
+          <span class="lname">{{ r.player.name }}</span>
+          <span class="lowner">{{ r.pooler_name }}</span>
+          <span class="lpts">{{ '%.0f'|format(r.points) }}</span>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+    <div class="leaders-col">
+      <h3><span class="posdot G"></span>Gardiens</h3>
+      <ol>
+        {% for r in leaders.goalies %}
+        <li>
+          <span class="lrank">{{ loop.index }}</span>
+          <span class="lname">{{ r.player.name }}</span>
+          <span class="lowner">{{ r.pooler_name }}</span>
+          <span class="lpts">{{ '%.0f'|format(r.points) }}</span>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+    <div class="leaders-col">
+      <h3><span class="posdot T"></span>Équipes</h3>
+      <ol>
+        {% for r in leaders.teams %}
+        <li>
+          <span class="lrank">{{ loop.index }}</span>
+          <span class="lname">{{ r.player.name }}</span>
+          <span class="lowner">{{ r.pooler_name }}</span>
+          <span class="lpts">{{ '%.0f'|format(r.points) }}</span>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-head"><h2><span class="dotbar" style="background:var(--pos-d)"></span>Profil offensif des équipes</h2></div>
+  <div class="panel-body">
+    {% set maxg = (ranked|map(attribute=1)|map(attribute='categories')|map(attribute='goals')|list or [1])|max %}
+    {% set maxa = (ranked|map(attribute=1)|map(attribute='categories')|map(attribute='assists')|list or [1])|max %}
+    {% set maxpp = (ranked|map(attribute=1)|map(attribute='categories')|map(attribute='pp')|list or [1])|max %}
+    <div class="catgrid">
+      {% for pooler_id, t in ranked %}
+      {% set c = t.categories %}
+      <div class="catcard">
+        <h4>{{ t.name }}</h4>
+        <div class="catrow"><span class="lbl">Buts</span><span class="catbar"><i style="width:{{ (c.goals / (maxg or 1) * 100)|round(1) }}%; background:var(--pos-f)"></i></span><span class="val">{{ c.goals }}</span></div>
+        <div class="catrow"><span class="lbl">Passes</span><span class="catbar"><i style="width:{{ (c.assists / (maxa or 1) * 100)|round(1) }}%; background:var(--pos-d)"></i></span><span class="val">{{ c.assists }}</span></div>
+        <div class="catrow"><span class="lbl">Av. num.</span><span class="catbar"><i style="width:{{ (c.pp / (maxpp or 1) * 100)|round(1) }}%; background:var(--pos-g)"></i></span><span class="val">{{ c.pp }}</span></div>
+        <div class="catrow"><span class="lbl">V. gard.</span><span class="catbar"><i style="width:{{ (c.goalie_wins / 60 * 100)|round(1) }}%; background:var(--pos-t)"></i></span><span class="val">{{ c.goalie_wins }}</span></div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-head"><h2><span class="dotbar"></span>Alignements &amp; points par joueur</h2></div>
+  <div class="panel-body">
+    <div class="grid6">
+      {% for pooler_id, t in ranked %}
+      {% set t1 = t.slots['T1'].player %}
+      <div class="teamcard" style="--tc: {{ team_color(t1.team) if t1 else 'var(--accent)' }}">
+        <div class="th2">
+          <div class="who">
+            <a href="/equipe/{{ pooler_id }}">{{ t.name }}</a>
+            <span class="teamname">{{ team_name(t1.team) if t1 else '' }}</span>
+          </div>
+          <div class="ptswrap">
+            {% set spark = sparks.get(pooler_id, []) %}
+            {% if spark|length > 1 %}
+            <svg class="spark {{ sparkline_trend(spark) }}" width="50" height="20" viewBox="0 0 50 20">
+              <polyline points="{{ sparkline_points(spark, 50, 20) }}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            {% endif %}
+            <span class="pts num">{{ '%.0f'|format(t.total) }}</span>
+          </div>
+        </div>
+        <div class="rows">
+          {% for slot in slots %}
+          {% set s = t.slots[slot] %}
+          <div class="row {{ 'empty' if not s.player else '' }}">
+            {% if s.player %}<span class="posdot {{ s.player.pos }}"></span>{% endif %}
+            <span class="nm">
+              {% if s.player %}
+                {{ s.player.name }}
+                {% if s.player.note_type == 'injury' %}<span title="{{ s.player.note }}">🩹</span>{% endif %}
+              {% else %}
+                — {{ slot }} vacant —
+              {% endif %}
+            </span>
+            <span class="pt num">{{ '%.0f'|format(s.points) }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<p class="foot">Pointage : but/passe = 1 pt (+1 avantage numérique, +1 désavantage, +1 prolongation) &middot; victoire de gardien ou d'équipe = 2 pts, défaite en prolongation = 1, blanchissage = +1 &middot; but de gardien = 10 pts. Le badge 🩹 indique un joueur signalé blessé (modifiable dans Stats (admin)).</p>
+{% endblock %}

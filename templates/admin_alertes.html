@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block title %}Alertes — Les chums{% endblock %}
+{% block content %}
+
+<div class="panel">
+  <div class="panel-head"><h2><span class="dotbar"></span>Alertes Discord</h2></div>
+  <div class="panel-body">
+    <p class="small">
+      Le pool peut poster un résumé automatiquement dans un canal Discord — pas
+      d'app à installer, juste une URL de webhook que Discord te donne. Dans le
+      canal choisi : icône d'engrenage du canal &rarr; Intégrations &rarr; Webhooks
+      &rarr; Nouveau webhook &rarr; copier l'URL et la coller ci-dessous.
+    </p>
+
+    <form method="post" action="/admin/alertes/save" class="mt">
+      <div class="field">
+        <label for="webhook_url" class="small" style="display:block; margin-bottom:4px">URL du webhook Discord</label>
+        <input type="text" id="webhook_url" name="webhook_url" value="{{ webhook_url }}"
+               placeholder="https://discord.com/api/webhooks/..." style="width:100%; max-width:520px">
+      </div>
+      <label class="mt" style="display:flex; align-items:center; gap:6px">
+        <input type="checkbox" name="weekly_enabled" value="1" {{ 'checked' if weekly_enabled else '' }}>
+        Envoyer le résumé hebdo (chaque lundi, 8h)
+      </label>
+      <div class="mt">
+        <button class="btn small" type="submit">Enregistrer</button>
+      </div>
+    </form>
+
+    <form method="post" action="/admin/alertes/test" class="mt" style="display:inline">
+      <button class="btn small" type="submit">Envoyer un message de test</button>
+    </form>
+    <form method="post" action="/admin/alertes/envoyer" class="mt" style="display:inline; margin-left:8px">
+      <button class="btn small primary" type="submit">Envoyer le résumé maintenant</button>
+    </form>
+    {% if test_result %}
+    <div class="small mt">Dernier test : {{ 'réussi ✓' if test_result == 'ok' else test_result }}</div>
+    {% endif %}
+    {% if send_now_result %}
+    <div class="small">Dernier envoi manuel : {{ 'réussi ✓' if send_now_result == 'ok' else send_now_result }}</div>
+    {% endif %}
+
+    <p class="small mt">
+      {% if weekly_last_sent %}
+      Dernier résumé hebdo envoyé : {{ weekly_last_sent.replace('T', ' ') }}
+      ({{ 'réussi' if weekly_last_status == 'ok' else weekly_last_status }})
+      {% else %}
+      Aucun résumé hebdo envoyé pour l'instant.
+      {% endif %}
+    </p>
+  </div>
+</div>
+
+<div class="panel mt">
+  <div class="panel-head"><h2><span class="dotbar" style="background:var(--violet)"></span>Mentions Discord (notifications)</h2></div>
+  <div class="panel-body">
+    <p class="small">
+      Pour qu'une personne reçoive une vraie notification (pas juste un
+      message dans le canal), Discord a besoin de son <b>ID numérique</b>,
+      pas juste son pseudo — coller "@Slippy" dans le message ne notifie
+      personne. Pour trouver l'ID d'un membre : Discord &rarr; Réglages
+      utilisateur &rarr; Avancés &rarr; active "Mode développeur" &rarr;
+      clic droit sur la personne dans la liste des membres &rarr; "Copier
+      l'ID utilisateur" &rarr; colle-le ici.
+    </p>
+    <p class="small">
+      Chaque personne choisit <b>quels types</b> d'alertes elle reçoit — pas
+      juste "activé/désactivé" en bloc. Ex. : quelqu'un peut vouloir être
+      pingé dès qu'un de ses joueurs est blessé, sans forcément vouloir être
+      mentionné dans le résumé du lundi (ou l'inverse).
+    </p>
+    <table class="mt">
+      <thead>
+        <tr>
+          <th>Pooler</th><th>Pseudo connu</th><th>ID Discord</th>
+          {% for key, label, hint in category_defs %}<th title="{{ hint }}">{{ label }}</th>{% endfor %}
+          <th></th><th>Test individuel</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in poolers %}
+        {% set pid = p.id|string %}
+        {% set cats = mention_categories.get(pid, {}) %}
+        <tr>
+          <td style="font-weight:600">{{ p.name }}</td>
+          <td class="small">{{ known_handles.get(p.name, '—') }}</td>
+          <form method="post" action="/admin/alertes/mention/{{ p.id }}" style="display:contents">
+            <td><input type="text" name="discord_id" value="{{ mentions.get(pid, '') }}"
+                       placeholder="ex. 302938593018175488" style="width:190px"></td>
+            {% for key, label, hint in category_defs %}
+            <td>
+              <label class="small" title="{{ hint }}">
+                <input type="checkbox" name="cat_{{ key }}" value="1" {{ 'checked' if cats.get(key, '1') != '0' else '' }}>
+              </label>
+            </td>
+            {% endfor %}
+            <td><button class="btn small" type="submit">Enregistrer</button></td>
+          </form>
+          <form method="post" action="/admin/alertes/tester/{{ p.id }}" style="display:contents">
+            <td>
+              <button class="btn small" type="submit">🔔 Tester {{ p.name.split(' ')[0] }}</button>
+              {% if mention_test_results.get(pid) %}
+              <div class="small">{{ 'réussi ✓' if mention_test_results.get(pid) == 'ok' else mention_test_results.get(pid) }}</div>
+              {% endif %}
+            </td>
+          </form>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p class="foot">Le résumé regroupe classement, mouvement depuis une semaine, joueur le plus chaud, et un aperçu des matchs à venir (dont les back-to-backs) — un seul message groupé, pas un par joueur. Quand un ID Discord est configuré pour un pooler, chaque catégorie cochée ci-dessus le mentionne au bon moment : 📊 Résumé hebdo sur sa ligne du lundi, 🩹 Blessures dès qu'un joueur de son alignement passe blessé (déclenché quand le statut est mis à jour sur cette page ou dans Stats (admin), pas par l'actualisation automatique LNH — les statuts sont saisis à la main). Le bouton "Tester" envoie tout de suite une petite mention juste pour cette personne, peu importe ses cases cochées, pour confirmer que la notification arrive vraiment.</p>
+{% endblock %}

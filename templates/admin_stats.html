@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block title %}Stats (admin) — Les chums{% endblock %}
+{% block content %}
+
+<div class="panel-head" style="border:none; padding:0 0 12px">
+  <div class="pill-tabs">
+    <a href="/admin/stats?pos=F" class="{{ 'active' if pos=='F' else '' }}">Attaquants</a>
+    <a href="/admin/stats?pos=D" class="{{ 'active' if pos=='D' else '' }}">Défenseurs</a>
+    <a href="/admin/stats?pos=G" class="{{ 'active' if pos=='G' else '' }}">Gardiens</a>
+    <a href="/admin/stats?pos=T" class="{{ 'active' if pos=='T' else '' }}">Équipes</a>
+  </div>
+  <div class="refreshbox">
+    <span class="dot {{ refresh.status }}"></span>
+    <span>{% if refresh.at %}Dernière actualisation : {{ refresh.at.replace('T',' ') }}{% else %}Jamais actualisé{% endif %}</span>
+    <form method="post" action="/refresh" style="margin:0"><button class="btn small" type="submit">Actualiser maintenant</button></form>
+  </div>
+</div>
+
+<p class="small">Les stats se mettent à jour automatiquement (LNH, aux 2h) quand l'app tourne. Cette page permet de corriger un chiffre à la main — utile pour un but de gardien, ou si l'actualisation automatique échoue pour un joueur.</p>
+
+{% if refresh.detail and refresh.detail.season_started == false and refresh.detail.nhl_season_seen %}
+<div class="panel mt" style="border-color:var(--warn-soft)">
+  <div class="panel-body small">
+    <b>Saison 2026-27 pas encore commencée</b> — l'API LNH renvoie encore {{ refresh.detail.nhl_season_seen[:4] }}-{{ refresh.detail.nhl_season_seen[6:] }}
+    (dernière saison complétée) comme "actuelle", donc les stats restent volontairement à 0 plutôt que d'afficher l'ancienne saison.
+  </div>
+</div>
+{% endif %}
+
+{% if refresh.detail and refresh.detail.failed_teams %}
+<div class="panel mt">
+  <div class="panel-body small">
+    <b>Équipes en échec à la dernière actualisation :</b>
+    {% for f in refresh.detail.failed_teams %}{{ f.team }} ({{ f.error }}){% if not loop.last %}, {% endif %}{% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<div class="panel mt">
+  <div class="panel-body" style="padding:0; overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Joueur</th><th>Éq.</th>
+          {% if pos in ('F','D') %}
+          <th class="r">PJ</th><th class="r">B</th><th class="r">A</th><th class="r">P</th>
+          <th class="r">AN</th><th class="r">DN</th><th class="r">Prol.</th>
+          {% elif pos == 'G' %}
+          <th class="r">PJ</th><th class="r">V</th><th class="r">DP</th><th class="r">D</th><th class="r">BL</th><th class="r">B (10pt/ea)</th>
+          {% elif pos == 'T' %}
+          <th class="r">V</th><th class="r">DP</th><th class="r">D</th>
+          {% endif %}
+          <th>Note / statut</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for r in rows %}
+        <tr>
+          <td style="font-weight:600">{{ r.name }}</td>
+          <td class="small"><span class="teamswatch" style="background:{{ team_color(r.team) }}"></span>{{ r.team }}</td>
+
+          {% if pos in ('F','D') %}
+          <form method="post" action="/admin/stats/skater/{{ r.id }}" style="display:contents">
+          <td class="r"><input type="number" name="games_played" value="{{ r.games_played or 0 }}"></td>
+          <td class="r"><input type="number" name="goals" value="{{ r.goals or 0 }}"></td>
+          <td class="r"><input type="number" name="assists" value="{{ r.assists or 0 }}"></td>
+          <td class="r"><input type="number" name="points" value="{{ r.points or 0 }}"></td>
+          <td class="r"><input type="number" name="pp_points" value="{{ r.pp_points or 0 }}"></td>
+          <td class="r"><input type="number" name="sh_points" value="{{ r.sh_points or 0 }}"></td>
+          <td class="r"><input type="number" name="ot_goals" value="{{ r.ot_goals or 0 }}"></td>
+
+          {% elif pos == 'G' %}
+          <form method="post" action="/admin/stats/goalie/{{ r.id }}" style="display:contents">
+          <td class="r"><input type="number" name="games_played" value="{{ r.games_played or 0 }}"></td>
+          <td class="r"><input type="number" name="wins" value="{{ r.wins or 0 }}"></td>
+          <td class="r"><input type="number" name="ot_losses" value="{{ r.ot_losses or 0 }}"></td>
+          <td class="r"><input type="number" name="losses" value="{{ r.losses or 0 }}"></td>
+          <td class="r"><input type="number" name="shutouts" value="{{ r.shutouts or 0 }}"></td>
+          <td class="r"><input type="number" name="goals" value="{{ r.goals or 0 }}"></td>
+
+          {% elif pos == 'T' %}
+          <form method="post" action="/admin/stats/team/{{ r.team }}" style="display:contents">
+          <td class="r"><input type="number" name="wins" value="{{ r.wins or 0 }}"></td>
+          <td class="r"><input type="number" name="ot_losses" value="{{ r.ot_losses or 0 }}"></td>
+          <td class="r"><input type="number" name="losses" value="{{ r.losses or 0 }}"></td>
+          {% endif %}
+          <td></td>
+          <td><button class="btn small" type="submit">Enregistrer</button></td>
+          </form>
+
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+          <td colspan="{{ 7 if pos in ('F','D') else (6 if pos=='G' else 3) }}"></td>
+          <form method="post" action="/admin/note/{{ r.id }}" style="display:contents">
+          <input type="hidden" name="back_pos" value="{{ pos }}">
+          <td>
+            <select name="note_type" style="font-size:12px">
+              <option value="" {{ 'selected' if not r.note_type else '' }}>—</option>
+              {% for k,v in note_labels.items() %}
+              <option value="{{ k }}" {{ 'selected' if r.note_type==k else '' }}>{{ v }}</option>
+              {% endfor %}
+            </select>
+            <input type="text" name="note" value="{{ r.note or '' }}" placeholder="détail (ex.: retour ~15 oct.)" style="width:220px; font-size:12px">
+          </td>
+          <td><button class="btn small" type="submit">Note</button></td>
+          </form>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}
